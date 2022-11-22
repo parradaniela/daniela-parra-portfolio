@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    flex-direction: column;
+
+    .nav-site {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-socials {
+        display: flex;
+    }
+}

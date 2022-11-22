@@ -1,1 +1,8 @@
 @use './partials/setup';
+@use './partials/global';
+// Tab general styles
+@use './partials/nav';
+@use './partials/tabs';
+// Sections
+@use './partials/sections/landing';
+@use './partials/sections/contact';

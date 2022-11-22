@@ -1,0 +1,45 @@
+// Credit to Stephen Nelson's Fantabulous Tabs Simple Javascript animated tabs codepen for the tab animations. Link: https://codepen.io/nelsonswork/pen/XbRoQo
+
+.tabs {
+    display: flex;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: burlywood;
+    flex-basis: 30%;
+}
+
+.tabs-head {
+    background-color: salmon;
+}
+
+.tabs-toggle {
+    cursor: pointer;
+}
+
+.tabs-body {
+    overflow: hidden;
+    position: relative;
+    background-color: grey;
+    flex-basis: 70%;
+}
+
+.tabs-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: greenyellow;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all ease-in-out 0.5s;
+    z-index: -1;
+}
+.tabs-content.is-active {
+    transform: translateX(0);
+    z-index: 10;
+}
