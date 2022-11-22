@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Daniela Parra</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper tabs">
+            <nav>
+                <ul class="nav-site tabs-head">
+                    <li><button class="tabs-toggle is-active">Home</button></li>
+                    <li><button class="tabs-toggle">About Me</button></li>
+                    <li><button class="tabs-toggle">Skills</button></li>
+                    <li><button class="tabs-toggle">Projects</button></li>
+                    <li><button class="tabs-toggle">Contact Me</button></li>
+                </ul>
+                <ul class="nav-socials">
+                    <li><a href="https://github.com/parradaniela">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/parradaniela/">LinkedIn</a></li>
+                </ul>
+            </nav> <!-- END .tabs -->
+            <div class="tabs-body">
+                <section class="landing tabs-content is-active">
+                    <h1>Daniela Parra</h1>
+                    <h2>Toronto based developer</h2>
+                    <button>Get in Touch!</button>
+                </section>
+        
+                <section class="about tabs-content">
+                    <h2>About me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, voluptas incidunt. Ex expedita qui veniam rerum impedit, et sed tempore! Adipisci ullam culpa officiis magnam asperiores dolor dolorum iste dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. In quam adipisci excepturi labore nobis maiores fuga quas rem reiciendis voluptatum dolore incidunt, odio ipsam vel mollitia sapiente sit omnis eos?</p>
+                </section>
+
+                <section class="skills tabs-content">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>image here?</li>
+                        <li>image here?</li>
+                        <li>image here?</li>
+                        <li>image here?</li>
+                        <li>image here?</li>
+                    </ul>
+                </section>
+
+                <section class="projects tabs-content">
+                    <h2>My Previous Projects</h2>
+                    <ul class="projects-list">
+                        <li class="projects-list-item">
+                            <img src="" alt="Assignment 1">
+                            <div class="project-links">
+                                <a href="https://github.com/parradaniela/daniela-parra-assignment-1">Repository</a>
+                                <a href="https://parradaniela.github.io/daniela-parra-assignment-1/">Live Site</a>
+                            </div>
+                        </li>
+                        <li class="projects-list-item">
+                            <img src="" alt="Project 1">
+                            <div class="project-links">
+                                <a href="https://github.com/parradaniela/daniela-parra-project-1">Repository</a>
+                                <a href="https://guileless-bonbon-c2a588.netlify.app/">Live Site</a>
+                            </div>
+                        </li>
+                        <li class="projects-list-item">
+                            <img src="" alt="Project 2">
+                            <div class="project-links">
+                                <a href="https://github.com/weatherAppJuno/weatherApp">Repository</a>
+                                <a href="https://singular-begonia-bd09cf.netlify.app/">Live Site</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="contact tabs-content">
+                    <h2>Get in touch</h2>
+                    <form
+                        action="https://formspree.io/f/meqddyok"
+                        method="POST"
+                        id="contact-form"
+                    >
+                        <fieldset class="form-flex">
+                            <legend>Contact me</legend>
+                            <label for="name">Name</label>
+                            <input type="text" id="name">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email">
+                            <label for="message">Message</label>
+                            <textarea id="message"></textarea>
+                            <button type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </div> <!-- END .tabs-content -->
+        </div> <!-- END .wrapper .main-flex-->
+    </main>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
