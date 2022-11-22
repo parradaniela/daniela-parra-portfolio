@@ -1,0 +1,9 @@
+.projects-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+        flex-basis: 30%;
+    }
+}

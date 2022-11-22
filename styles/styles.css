@@ -334,6 +334,37 @@ nav {
   text-align: center;
 }
 
+.skills-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+.skills-list li {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+.projects-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects-list-item {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
 .form-flex {
   display: -webkit-box;
   display: -ms-flexbox;
