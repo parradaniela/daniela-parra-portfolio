@@ -8,7 +8,7 @@ portfolioApp.init = () => {
 
 portfolioApp.toggleTabs = () => {
     const tabButtons = document.querySelectorAll('.tabs-toggle');
-    const tabContents = document.querySelectorAll('.tabs-content');
+    const tabContents = document.querySelectorAll('.tabs-body-content');
     tabButtons.forEach((button, index) => {
         button.addEventListener('click', () => {
             // remove the is-active class from all tab buttons and content sections
@@ -20,5 +20,10 @@ portfolioApp.toggleTabs = () => {
         });
     });
 }
+
+//TODO: I suspect that in order to get the landing page button to connect to the contact me tab, it will need its own function
+    // attach event listener to the button
+    // on click, removes is-active class from all tab content and buttons
+    // then applies the class specifically to the contact me button and content - maybe use ID for this after all
 
 portfolioApp.init();
