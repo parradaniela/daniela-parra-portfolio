@@ -8,15 +8,17 @@
     <title>Daniela Parra</title>
 </head>
 <body>
-    <main>
-        <div class="wrapper tabs">
+    <div class="wrapper tabs">
+        <header class="tabs-head">
             <nav>
-                <ul class="nav-site tabs-head">
-                    <li><button class="tabs-toggle is-active">Home</button></li>
-                    <li><button class="tabs-toggle">About Me</button></li>
-                    <li><button class="tabs-toggle">Skills</button></li>
-                    <li><button class="tabs-toggle">Projects</button></li>
-                    <li><button class="tabs-toggle">Contact Me</button></li>
+                <ul class="nav-site">
+                    <div class="tabs-head-buttons">
+                        <li><button class="tabs-toggle is-active">Home</button></li>
+                        <li><button class="tabs-toggle">About Me</button></li>
+                        <li><button class="tabs-toggle">Skills</button></li>
+                        <li><button class="tabs-toggle">Projects</button></li>
+                        <li><button class="tabs-toggle">Contact Me</button></li>
+                    </div>
                     <div class="nav-socials">
                         <li>
                             <a href="https://github.com/parradaniela"><ion-icon name="logo-github"></ion-icon></a>
@@ -27,19 +29,21 @@
                     </div>
                 </ul>
             </nav> <!-- END .tabs -->
-            <div class="tabs-body">
-                <section class="landing tabs-content is-active">
+        </header>
+        <main class="tabs-body">
+            <!-- <div > -->
+                <section class="landing tabs-body-content is-active">
                     <h1>Daniela Parra</h1>
                     <h2>Toronto based developer</h2>
                     <button>Get in Touch!</button>
                 </section>
         
-                <section class="about tabs-content">
+                <section class="about tabs-body-content">
                     <h2>About me</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, voluptas incidunt. Ex expedita qui veniam rerum impedit, et sed tempore! Adipisci ullam culpa officiis magnam asperiores dolor dolorum iste dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. In quam adipisci excepturi labore nobis maiores fuga quas rem reiciendis voluptatum dolore incidunt, odio ipsam vel mollitia sapiente sit omnis eos?</p>
                 </section>
 
-                <section class="skills tabs-content">
+                <section class="skills tabs-body-content">
                     <h2>Skills</h2>
                     <ul class="skills-list">
                         <li>
@@ -73,7 +77,7 @@
                     </ul>
                 </section>
 
-                <section class="projects tabs-content">
+                <section class="projects tabs-body-content">
                     <h2>My Previous Projects</h2>
                     <ul class="projects-list">
                         <li class="projects-list-item">
@@ -100,13 +104,10 @@
                     </ul>
                 </section>
 
-                <section class="contact tabs-content">
+                <section class="contact tabs-body-content" id="contact">
                     <h2>Get in touch</h2>
-                    <form
-                        action="https://formspree.io/f/meqddyok"
-                        method="POST"
-                        id="contact-form"
-                    >
+                    <!-- <form action="https://formspree.io/f/meqddyok" method="POST" id="contact-form"> -->
+                    <form action="#">
                         <fieldset class="form-flex">
                             <legend>Contact me</legend>
                             <label for="name">Name</label>
@@ -119,9 +120,9 @@
                         </fieldset>
                     </form>
                 </section>
-            </div> <!-- END .tabs-content -->
-        </div> <!-- END .wrapper .main-flex-->
-    </main>
+            <!-- </div> END .tabs-body -->
+        </main>
+    </div> <!-- END .wrapper .tabs-->
     <!-- Ionicons script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!-- Link to app.js -->
