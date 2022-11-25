@@ -13,11 +13,14 @@ html {
 h1 {
     font-size: 4rem;
     font-family: v.$font-heading;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 3rem;
     font-family: v.$font-heading;
+    text-transform: uppercase;
+    padding: 5%;
 }
 
 p, 
@@ -27,4 +30,8 @@ label,
 input {
     font-size: 2rem;
     font-family: v.$font-text;
+}
+
+ion-icon {
+    font-size: 5rem;
 }

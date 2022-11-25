@@ -1,11 +1,14 @@
 .skills-list {
     width: 100%;
+    padding: 10%;
+    // margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
 
     li {
-        flex-basis: 10%;
+        flex-basis: 20%;
+        padding: 5% 0;
     }
 }

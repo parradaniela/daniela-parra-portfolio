@@ -229,8 +229,7 @@ html {
 /* Effect from https://css.glass */
 body {
   background: #3c1053; /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(#3c1053), to(#ad5389));
-  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: radial-gradient(circle, #ad5389 10%, #3c1053 100%);
 }
 
 h1, h2, p, button, ul {
@@ -254,6 +253,10 @@ input {
   margin: 0 auto;
 }
 
+.block-span {
+  display: block;
+}
+
 * {
   color: #f5efed;
 }
@@ -265,11 +268,14 @@ html {
 h1 {
   font-size: 4rem;
   font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 3rem;
   font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  padding: 5%;
 }
 
 p,
@@ -279,6 +285,10 @@ label,
 input {
   font-size: 2rem;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+ion-icon {
+  font-size: 5rem;
 }
 
 .navigation {
@@ -407,12 +417,16 @@ input {
   z-index: 10;
 }
 
-.landing, .about {
-  text-align: center;
+.about {
+  padding: 10%;
+}
+.about-text p {
+  margin: 5% 0;
 }
 
 .skills-list {
   width: 100%;
+  padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,8 +438,9 @@ input {
   text-align: center;
 }
 .skills-list li {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  padding: 5% 0;
 }
 
 .projects-list {
