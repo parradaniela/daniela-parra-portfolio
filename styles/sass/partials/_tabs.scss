@@ -6,14 +6,22 @@
 
 //TODO: Other things to think about are if we want to do all buttons in one partial? Or based on section? How are button global styles being handled? 
 
-.tabs, nav, .tabs-head, .tabs-body {height: 100vh};
+.tabs, 
+.tabs-head, 
+.navigation-site, 
+.tabs-body {
+    height: 100vh
+};
 
 .tabs {
     display: flex;
+    
 
     &-head {
-        background-color: salmon;
+        @include v.glassmorphism(v.$color-white);
         flex-basis: 20%; 
+        border-radius: 16px 0 0 16px;
+        
 
         &-buttons {
             width: 100%;
@@ -22,6 +30,9 @@
                 transition: all ease-in-out .8s;
                 cursor: pointer;
                 width: 100%;
+                padding: 20%;
+                // border: 1px solid black;
+                background-color: transparent;
             }
         }
     }
@@ -29,16 +40,16 @@
     &-body {
         overflow: hidden;
         position: relative;
-        background-color: grey;
         flex-basis: 80%;
 
         &-content {
             @include v.flex-center(column);
+            @include v.glassmorphism(v.$color-black);
+            border-radius: 0 16px 16px 0;
             height: 100vh;
             position: absolute;
             left: 0px;
             top: 0px;
-            background-color: greenyellow;
             width: 100%;
             transform: translateX(-250%);
             transition: all ease-in-out 0.8s;
@@ -50,22 +61,4 @@
             }
         }
     }
-}
-
-nav {
-    @include v.flex-center(column);
-}
-.nav-site {
-    @include v.flex-center(column);
-    width: 100%;
-
-    li {
-        width: 100%;
-    }
-}
-
-.nav-socials {
-    @include v.flex-center(row);
-    background-color: red;
-    width: 100%;
 }

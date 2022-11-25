@@ -4,3 +4,23 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Effect from https://css.glass */
+@mixin glassmorphism($color) {
+    background: rgba($color, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(1.4px);
+    border: $border-light;
+}
+
+$color-primary: #3c1053;
+$color-secondary: #ad5389; 
+$color-black: #1f2126;
+$color-grey: #4b4f5d;
+$color-white: #f5efed;
+
+$font-heading: 'Quicksand', sans-serif;
+$font-text: 'Source Sans Pro', sans-serif;
+
+$border-light: 1px solid rgba(255, 255, 255, 0.3);

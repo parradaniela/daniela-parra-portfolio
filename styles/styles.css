@@ -226,6 +226,13 @@ html {
   overflow: hidden;
 }
 
+/* Effect from https://css.glass */
+body {
+  background: #3c1053; /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#3c1053), to(#ad5389));
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1, h2, p, button, ul {
   margin: 0;
   padding: 0;
@@ -235,7 +242,9 @@ li {
   list-style: none;
 }
 
-button {
+button,
+fieldset,
+input {
   border: none;
 }
 
@@ -245,7 +254,85 @@ button {
   margin: 0 auto;
 }
 
-.tabs, nav, .tabs-head, .tabs-body {
+* {
+  color: #f5efed;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+p,
+a,
+button,
+label,
+input {
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navigation-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.navigation-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.tabs,
+.tabs-head,
+.navigation-site,
+.tabs-body {
   height: 100vh;
 }
 
@@ -255,9 +342,15 @@ button {
   display: flex;
 }
 .tabs-head {
-  background-color: salmon;
+  background: rgba(245, 239, 237, 0.23);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+  border-radius: 16px 0 0 16px;
 }
 .tabs-head-buttons {
   width: 100%;
@@ -267,11 +360,12 @@ button {
   transition: all ease-in-out 0.8s;
   cursor: pointer;
   width: 100%;
+  padding: 20%;
+  background-color: transparent;
 }
 .tabs-body {
   overflow: hidden;
   position: relative;
-  background-color: grey;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
 }
@@ -289,11 +383,17 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgba(31, 33, 38, 0.23);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0 16px 16px 0;
   height: 100vh;
   position: absolute;
   left: 0px;
   top: 0px;
-  background-color: greenyellow;
   width: 100%;
   -webkit-transform: translateX(-250%);
           transform: translateX(-250%);
@@ -305,60 +405,6 @@ button {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   z-index: 10;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-site {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-.nav-site li {
-  width: 100%;
-}
-
-.nav-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: red;
-  width: 100%;
 }
 
 .landing, .about {

@@ -1,0 +1,30 @@
+@use './variables' as v;
+
+// Font colour
+* {
+    color: v.$color-white;
+}
+
+// Font styles
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: v.$font-heading;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: v.$font-heading;
+}
+
+p, 
+a, 
+button, 
+label, 
+input {
+    font-size: 2rem;
+    font-family: v.$font-text;
+}

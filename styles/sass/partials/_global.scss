@@ -1,3 +1,10 @@
+@use './variables' as v;
+
+body {
+    background: v.$color-primary; /* fallback for old browsers */
+    background: linear-gradient(to right, v.$color-primary, v.$color-secondary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1, h2, p, button, ul {
     margin: 0;
     padding: 0;
@@ -7,7 +14,9 @@ li {
     list-style: none;
 }
 
-button {
+button,
+fieldset, 
+input {
     border: none;
 }
 

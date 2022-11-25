@@ -1,0 +1,16 @@
+@use './variables' as v;
+
+.navigation {
+    @include v.flex-center(column);
+    
+    &-site {
+        @include v.flex-center(column);
+        width: 100%; 
+    }
+    
+    &-socials {
+        @include v.flex-center(row);
+        // background-color: red;
+        width: 100%;
+    }
+}
