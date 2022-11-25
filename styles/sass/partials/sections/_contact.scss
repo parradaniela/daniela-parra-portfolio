@@ -1,4 +1,27 @@
-.form-flex {
-    display: flex;
-    flex-direction: column;
-}
+@use '../variables' as v;
+
+.form {
+    width: 100%;
+    
+    &-flex {
+        display: flex;
+        flex-direction: column;
+
+        legend {
+            padding: 2% 0;
+        }
+
+        label {
+            margin: 2% 0;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+        }
+
+        textarea {
+            min-height: 20rem;
+        }
+    }
+} 

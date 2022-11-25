@@ -40,7 +40,7 @@
                 <section class="landing tabs-body-content is-active">
                     <h1>Daniela Parra</h1>
                     <h2>Toronto based developer</h2>
-                    <button>Get in Touch!</button>
+                    <button class="btn">Get in Touch!</button>
                 </section>
         
                 <section class="about tabs-body-content">
@@ -125,20 +125,20 @@
                     </ul>
                 </section>
 
-                <section class="contact tabs-body-content" id="contact">
+                <section class="tabs-body-content" id="contact">
                     <h2>Get in touch</h2>
                     <p>Would you like to connect? Let's get in touch! Fill out the form below, or schedule a chat with me directly on my <a href="https://calendly.com/daniela-parra-lp/30min">Calendly!</a></p>
                     <!-- <form action="https://formspree.io/f/meqddyok" method="POST" id="contact-form"> -->
-                    <form action="#">
+                    <form action="#" class="form">
                         <fieldset class="form-flex">
                             <legend>Contact me</legend>
                             <label for="name">Name</label>
-                            <input type="text" id="name">
+                            <input type="text" id="name" required>
                             <label for="email">Email Address</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" required>
                             <label for="message">Message</label>
-                            <textarea id="message"></textarea>
-                            <button type="submit">Submit</button>
+                            <textarea id="message" required></textarea>
+                            <button type="submit" class="btn">Submit</button>
                         </fieldset>
                     </form>
                 </section>

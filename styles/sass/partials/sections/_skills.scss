@@ -1,7 +1,5 @@
 .skills-list {
     width: 100%;
-    padding: 10%;
-    // margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -10,5 +8,11 @@
     li {
         flex-basis: 20%;
         padding: 5% 0;
+        transition: 0.8s;
+
+        &:hover > *,
+        &:hover span {
+            color: black;
+        }
     }
 }

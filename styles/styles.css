@@ -232,7 +232,7 @@ body {
   background: radial-gradient(circle, #ad5389 10%, #3c1053 100%);
 }
 
-h1, h2, p, button, ul {
+h1, h2, p, button, ul, fieldset {
   margin: 0;
   padding: 0;
 }
@@ -247,6 +247,13 @@ input {
   border: none;
 }
 
+.tabs,
+.tabs-head,
+.navigation-site,
+.tabs-body {
+  height: 100vh;
+}
+
 .wrapper {
   max-width: 1600px;
   width: 90%;
@@ -255,40 +262,72 @@ input {
 
 .block-span {
   display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 15px;
+  background-color: rgba(173, 83, 137, 0.5);
+  border-radius: 15px;
 }
 
 * {
   color: #f5efed;
 }
 
+input,
+textarea {
+  color: #1f2126;
+}
+
 html {
   font-size: 62.5%;
+}
+
+h1,
+h2,
+button,
+legend,
+label {
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: 4rem;
   font-family: "Quicksand", sans-serif;
-  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-h2 {
+h2,
+legend {
   font-size: 3rem;
   font-family: "Quicksand", sans-serif;
-  text-transform: uppercase;
-  padding: 5%;
+  padding: 3%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 p,
 a,
 button,
 label,
-input {
+input,
+textarea {
   font-size: 2rem;
   font-family: "Source Sans Pro", sans-serif;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 ion-icon {
-  font-size: 5rem;
+  font-size: 6rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navigation {
@@ -337,13 +376,6 @@ ion-icon {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-}
-
-.tabs,
-.tabs-head,
-.navigation-site,
-.tabs-body {
-  height: 100vh;
 }
 
 .tabs {
@@ -399,6 +431,7 @@ ion-icon {
   backdrop-filter: blur(1.4px);
   -webkit-backdrop-filter: blur(1.4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0 10%;
   border-radius: 0 16px 16px 0;
   height: 100vh;
   position: absolute;
@@ -416,17 +449,12 @@ ion-icon {
           transform: translateX(0);
   z-index: 10;
 }
-
-.about {
-  padding: 10%;
-}
-.about-text p {
+.tabs-body-content p {
   margin: 5% 0;
 }
 
 .skills-list {
   width: 100%;
-  padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,6 +469,11 @@ ion-icon {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   padding: 5% 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.skills-list li:hover > *, .skills-list li:hover span {
+  color: black;
 }
 
 .projects-list {
@@ -457,6 +490,9 @@ ion-icon {
       flex-basis: 30%;
 }
 
+.form {
+  width: 100%;
+}
 .form-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,4 +501,17 @@ ion-icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.form-flex legend {
+  padding: 2% 0;
+}
+.form-flex label {
+  margin: 2% 0;
+}
+.form-flex input,
+.form-flex textarea {
+  padding: 10px;
+}
+.form-flex textarea {
+  min-height: 20rem;
 }

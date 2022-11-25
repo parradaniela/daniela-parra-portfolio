@@ -6,13 +6,6 @@
 
 //TODO: Other things to think about are if we want to do all buttons in one partial? Or based on section? How are button global styles being handled? 
 
-.tabs, 
-.tabs-head, 
-.navigation-site, 
-.tabs-body {
-    height: 100vh
-};
-
 .tabs {
     display: flex;
     
@@ -45,6 +38,7 @@
         &-content {
             @include v.flex-center(column);
             @include v.glassmorphism(v.$color-black);
+            padding: 0 10%;
             border-radius: 0 16px 16px 0;
             height: 100vh;
             position: absolute;
@@ -58,6 +52,10 @@
             &.is-active {
                 transform: translateX(0);
                 z-index: 10;
+            }
+
+            p {
+                margin: 5% 0; 
             }
         }
     }

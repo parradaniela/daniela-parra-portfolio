@@ -5,33 +5,50 @@
     color: v.$color-white;
 }
 
+input,
+textarea {
+    color: v.$color-black;
+}
+
 // Font styles
 html {
     font-size: 62.5%;
 }
 
-h1 {
-    font-size: 4rem;
-    font-family: v.$font-heading;
+h1,
+h2,
+button,
+legend,
+label {
     text-transform: uppercase;
 }
 
-h2 {
+h1 {
+    font-size: 4rem;
+    font-family: v.$font-heading;
+    transition: all .3s;
+}
+
+h2,
+legend {
     font-size: 3rem;
     font-family: v.$font-heading;
-    text-transform: uppercase;
-    padding: 5%;
+    padding: 3%;
+    transition: all .3s;
 }
 
 p, 
 a, 
 button, 
 label, 
-input {
+input,
+textarea {
     font-size: 2rem;
     font-family: v.$font-text;
+    transition: all .3s;
 }
 
 ion-icon {
-    font-size: 5rem;
+    font-size: 6rem;
+    transition: all .3s;
 }
