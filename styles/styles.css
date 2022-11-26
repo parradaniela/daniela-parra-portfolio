@@ -233,7 +233,7 @@ body {
   background: linear-gradient(to right, #ad5389, #3c1053);
 }
 
-h1, h2, p, button, ul, fieldset {
+h1, h2, h3, p, button, ul, fieldset {
   margin: 0;
   padding: 0;
 }
@@ -301,6 +301,14 @@ html {
 
 h1,
 h2,
+h3 {
+  font-family: "Quicksand", sans-serif;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+h1,
+h2,
 button,
 legend,
 label {
@@ -309,18 +317,17 @@ label {
 
 h1 {
   font-size: 4rem;
-  font-family: "Quicksand", sans-serif;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 h2,
 legend {
   font-size: 3rem;
-  font-family: "Quicksand", sans-serif;
   padding: 3%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-top: 3%;
 }
 
 p,
@@ -329,17 +336,17 @@ button,
 label,
 input,
 textarea {
-  font-size: 2rem;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 ion-icon {
   font-size: 6rem;
+  margin: 5% auto;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  margin: 5% auto;
 }
 
 .navigation {
@@ -517,6 +524,19 @@ ion-icon {
           justify-content: space-between;
 }
 .projects-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
 }
@@ -524,6 +544,10 @@ ion-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+}
+.projects-list-item .btn {
+  width: 50%;
 }
 .projects-list-item .btn:first-child {
   margin-right: 10px;

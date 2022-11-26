@@ -1,16 +1,25 @@
+@use '../variables' as v;
+
 .projects-list {
     width: 100%;
     display: flex;
     justify-content: space-between;
 
     &-item {
+        @include v.flex-center(column);
         flex-basis: 30%;
 
         .project-links {
             display: flex;
+            width: 100%;
         }
-        .btn:first-child {
-            margin-right: 10px;
+        .btn{
+            width: 50%;
+
+            &:first-child {
+                margin-right: 10px;
+            }
         }
+        
     }
 }
