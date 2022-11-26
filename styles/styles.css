@@ -229,7 +229,8 @@ html {
 /* Effect from https://css.glass */
 body {
   background: #3c1053; /* fallback for old browsers */
-  background: radial-gradient(circle, #ad5389 10%, #3c1053 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ad5389), to(#3c1053));
+  background: linear-gradient(to right, #ad5389, #3c1053);
 }
 
 h1, h2, p, button, ul, fieldset {
@@ -247,17 +248,15 @@ input {
   border: none;
 }
 
-.tabs,
-.tabs-head,
-.navigation-site,
-.tabs-body {
-  height: 100vh;
+a {
+  display: block;
+  text-decoration: none;
 }
 
 .wrapper {
   max-width: 1600px;
   width: 90%;
-  margin: 0 auto;
+  margin: 2% auto;
 }
 
 .block-span {
@@ -273,6 +272,13 @@ input {
   padding: 15px;
   background-color: rgba(173, 83, 137, 0.5);
   border-radius: 15px;
+}
+.btn:hover, .btn:focus {
+  background-color: #3c1053;
+}
+
+.small {
+  font-size: 1.5rem;
 }
 
 * {
@@ -328,6 +334,7 @@ ion-icon {
   font-size: 6rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin: 5% auto;
 }
 
 .navigation {
@@ -345,7 +352,13 @@ ion-icon {
       -ms-flex-align: center;
           align-items: center;
 }
-.navigation-site {
+.navigation-site-item {
+  background: rgba(245, 239, 237, 0.23);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,23 +372,19 @@ ion-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
   width: 100%;
+  padding: 5%;
+  background-color: transparent;
 }
-.navigation-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+.navigation-site-item:hover, .navigation-site-item:focus {
+  background-color: #3c1053;
+}
+.navigation .offsite-link {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .tabs {
@@ -384,26 +393,42 @@ ion-icon {
   display: flex;
 }
 .tabs-head {
-  background: rgba(245, 239, 237, 0.23);
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.4px);
-  -webkit-backdrop-filter: blur(1.4px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   border-radius: 16px 0 0 16px;
 }
 .tabs-head-buttons {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
-.tabs-head-buttons .tabs-toggle {
-  -webkit-transition: all ease-in-out 0.8s;
-  transition: all ease-in-out 0.8s;
-  cursor: pointer;
-  width: 100%;
-  padding: 20%;
-  background-color: transparent;
+.tabs-head-buttons > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.tabs-head-buttons li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.tabs-head-buttons .tabs-toggle:hover,
+.tabs-head-buttons .tabs-toggle:focus {
+  background-color: #3c1053;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
 }
 .tabs-body {
   overflow: hidden;
@@ -433,7 +458,8 @@ ion-icon {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0 10%;
   border-radius: 0 16px 16px 0;
-  height: 100vh;
+  border-left: none;
+  height: 90vh;
   position: absolute;
   left: 0px;
   top: 0px;

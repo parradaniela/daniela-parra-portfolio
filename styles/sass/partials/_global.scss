@@ -2,8 +2,7 @@
 
 body {
     background: v.$color-primary; /* fallback for old browsers */
-    // background: linear-gradient(to right, v.$color-secondary, v.$color-primary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: radial-gradient(circle, v.$color-secondary 10%, v.$color-primary 100%, ); 
+    background: linear-gradient(to right, v.$color-secondary, v.$color-primary);
 }
 
 h1, h2, p, button, ul, fieldset {
@@ -21,18 +20,23 @@ input {
     border: none;
 }
 
-.tabs, 
-.tabs-head, 
-.navigation-site, 
-.tabs-body {
-    height: 100vh;
-    // min-height: 100vh;
-};
+a {
+    display: block;
+    text-decoration: none;
+}
+
+// .tabs, 
+// .tabs-head, 
+// .tabs-head-buttons, 
+// .tabs-body {
+//     height: 100vh;
+//     max-height: 100vh;
+// };
 
 .wrapper {
     max-width: 1600px;
     width: 90%;
-    margin: 0 auto;
+    margin: 2% auto;
 }
 
 .block-span {
@@ -47,4 +51,13 @@ input {
     padding: 15px;
     background-color: rgba(v.$color-secondary, 0.5);
     border-radius: 15px;
+
+    &:hover, 
+    &:focus {
+        background-color: v.$color-primary;
+    }
+}
+
+.small {
+    font-size: 1.5rem;
 }

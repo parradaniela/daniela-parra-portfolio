@@ -11,24 +11,33 @@
     
 
     &-head {
-        @include v.glassmorphism(v.$color-white);
         flex-basis: 20%; 
         border-radius: 16px 0 0 16px;
         
-
+        
         &-buttons {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            justify-content: stretch;
+            
+            > * {
+                flex: 1;
+            }
 
-            .tabs-toggle {
-                transition: all ease-in-out .8s;
-                cursor: pointer;
-                width: 100%;
-                padding: 20%;
-                // border: 1px solid black;
-                background-color: transparent;
+            li {
+                display: flex;
+                align-items: stretch;
+            }
+
+            .tabs-toggle:hover, 
+            .tabs-toggle:focus {
+                        background-color: v.$color-primary;
+                        transform: translateX(5%);
+                    }
             }
         }
-    }
 
     &-body {
         overflow: hidden;
@@ -40,7 +49,8 @@
             @include v.glassmorphism(v.$color-black);
             padding: 0 10%;
             border-radius: 0 16px 16px 0;
-            height: 100vh;
+            border-left: none;
+            height: 90vh;
             position: absolute;
             left: 0px;
             top: 0px;

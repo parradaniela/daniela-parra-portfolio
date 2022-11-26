@@ -2,6 +2,7 @@ const portfolioApp = {};
 
 portfolioApp.init = () => {
     portfolioApp.toggleTabs();
+    // portfolioApp.toggleSrOnly();
 }
 
 // Credit to the FRONTRU - Web Tutorials video on Youtube "Simple Tabs using HTML, CSS & JavaScript" for the easy to follow logic used in the tab method below. Link: https://youtu.be/3d8AwNea4lM 
@@ -20,6 +21,21 @@ portfolioApp.toggleTabs = () => {
         });
     });
 }
+
+// portfolioApp.toggleSrOnly = () => {
+//     const offsiteLinks = document.querySelectorAll('.offsite-link');
+//     // console.log(offsiteLinks);
+//     offsiteLinks.forEach((link) => {
+//         link.addEventListener('mouseenter', (event) => {
+//             const srOnlyParagraph = event.target.firstElementChild.children[1];
+//             srOnlyParagraph.classList.remove('sr-only');
+//         })
+//         link.addEventListener('mouseout', (event) => {
+//             const srOnlyParagraph = event.originalTarget.children[1];
+//             srOnlyParagraph.classList.add('sr-only');
+//         })
+//     })
+// }
 
 //TODO: I suspect that in order to get the landing page button to connect to the contact me tab, it will need its own function
     // attach event listener to the button
