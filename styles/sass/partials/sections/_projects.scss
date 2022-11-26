@@ -4,6 +4,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     &-item {
         @include v.flex-center(column);
@@ -15,6 +16,7 @@
         }
         .btn{
             width: 50%;
+            display: block;
 
             &:first-child {
                 margin-right: 10px;

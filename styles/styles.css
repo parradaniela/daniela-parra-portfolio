@@ -228,9 +228,9 @@ html {
 
 /* Effect from https://css.glass */
 body {
-  background: #3c1053; /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(#ad5389), to(#3c1053));
-  background: linear-gradient(to right, #ad5389, #3c1053);
+  background: url("../assets/pexels-azim-islam-1210276.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 h1, h2, h3, p, button, ul, fieldset {
@@ -249,12 +249,13 @@ input {
 }
 
 a {
-  display: block;
   text-decoration: none;
 }
 
 img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapper {
@@ -272,14 +273,14 @@ img {
 .btn {
   width: 50%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 3%;
   padding: 15px;
-  background-color: rgba(173, 83, 137, 0.5);
+  background-color: rgba(142, 134, 163, 0.5);
   border-radius: 15px;
   text-align: center;
 }
 .btn:hover, .btn:focus {
-  background-color: #3c1053;
+  background-color: #B87F86;
 }
 
 .small {
@@ -316,12 +317,12 @@ label {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 7rem;
 }
 
 h2,
 legend {
-  font-size: 3rem;
+  font-size: 5rem;
   padding: 3%;
 }
 
@@ -337,7 +338,7 @@ label,
 input,
 textarea {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -365,7 +366,7 @@ ion-icon {
           align-items: center;
 }
 .navigation-site-item {
-  background: rgba(245, 239, 237, 0.23);
+  background: rgba(31, 33, 38, 0.3);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.4px);
@@ -389,10 +390,9 @@ ion-icon {
   cursor: pointer;
   width: 100%;
   padding: 5%;
-  background-color: transparent;
 }
 .navigation-site-item:hover, .navigation-site-item:focus {
-  background-color: #3c1053;
+  background: #8e86a3;
 }
 .navigation .offsite-link {
   -webkit-transition: all 0.3s;
@@ -408,6 +408,7 @@ ion-icon {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   border-radius: 16px 0 0 16px;
+  z-index: 10;
 }
 .tabs-head-buttons {
   width: 100%;
@@ -438,15 +439,19 @@ ion-icon {
 }
 .tabs-head-buttons .tabs-toggle:hover,
 .tabs-head-buttons .tabs-toggle:focus {
-  background-color: #3c1053;
+  background-color: #8E86A3;
   -webkit-transform: translateX(5%);
           transform: translateX(5%);
+}
+.tabs-head-buttons .tabs-toggle:active {
+  background-color: #B87F86;
 }
 .tabs-body {
   overflow: hidden;
   position: relative;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
+  z-index: 0;
 }
 .tabs-body-content {
   display: -webkit-box;
@@ -462,7 +467,7 @@ ion-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(31, 33, 38, 0.23);
+  background: rgba(31, 33, 38, 0.3);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.4px);
@@ -489,6 +494,27 @@ ion-icon {
 }
 .tabs-body-content p {
   margin: 5% 0;
+}
+
+.about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about-text .svg-img {
+  width: 40%;
+}
+.about-text .svg-img.left {
+  float: left;
+  margin-right: 40px;
+}
+.about-text .svg-img.right {
+  float: right;
+  margin-left: 40px;
 }
 
 .skills-list {
@@ -522,6 +548,9 @@ ion-icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .projects-list-item {
   display: -webkit-box;
@@ -548,6 +577,7 @@ ion-icon {
 }
 .projects-list-item .btn {
   width: 50%;
+  display: block;
 }
 .projects-list-item .btn:first-child {
   margin-right: 10px;

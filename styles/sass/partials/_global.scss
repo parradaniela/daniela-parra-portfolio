@@ -1,8 +1,12 @@
 @use './variables' as v;
 
 body {
-    background: v.$color-primary; /* fallback for old browsers */
-    background: linear-gradient(to right, v.$color-secondary, v.$color-primary);
+    // background: v.$color-primary; /* fallback for old browsers */
+    // background: linear-gradient(to right, v.$color-secondary, v.$color-primary);
+    // Background photo credit to: Azim Islam at Pexels: https://www.pexels.com/@azim-islam-460924/
+    background: url('../assets/pexels-azim-islam-1210276.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 h1, h2, h3, p, button, ul, fieldset {
@@ -21,12 +25,12 @@ input {
 }
 
 a {
-    display: block;
     text-decoration: none;
 }
 
 img {
     max-width: 100%;
+    object-fit: cover;
 }
 
 .wrapper {
@@ -43,15 +47,15 @@ img {
 .btn {
     width: 50%;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 15px;
-    background-color: rgba(v.$color-secondary, 0.5);
+    background-color: rgba(v.$color-primary, 0.5);
     border-radius: 15px;
     text-align: center;
 
     &:hover, 
     &:focus {
-        background-color: v.$color-primary;
+        background-color: v.$color-secondary;
     }
 }
 

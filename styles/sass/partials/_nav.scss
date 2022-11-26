@@ -4,17 +4,16 @@
     @include v.flex-center(column);
 
         &-site-item {
-            @include v.glassmorphism(v.$color-white);
+            @include v.glassmorphism(v.$color-black); 
             @include v.flex-center(column);
             transition: all ease-in-out .3s;
             cursor: pointer;
             width: 100%;
             padding: 5%;
-            background-color: transparent;
 
             &:hover,
             &:focus {
-                background-color: v.$color-primary;
+                background: rgba(v.$color-primary, 1);
             }
         
         }

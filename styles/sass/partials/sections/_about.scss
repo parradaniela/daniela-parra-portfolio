@@ -1,8 +1,23 @@
-// @use '../variables' as v;
+@use '../variables' as v;
 
-// .about { 
-//     // padding: 10%;
-//     &-text p {
-//         margin: 5% 0;
-//     }
-// }
+.about-text {
+    display: flex;
+    flex-direction: column;
+    
+    .svg-img {
+        width: 40%;
+        // border: 1px solid white;
+        // border-radius: 50%;
+        
+        &.left {
+            float: left;
+            margin-right: 40px;
+        }
+    
+        &.right {
+            float: right;
+            margin-left: 40px;
+        }
+    }
+    
+}

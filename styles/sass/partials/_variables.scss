@@ -7,15 +7,15 @@
 
 /* Effect from https://css.glass */
 @mixin glassmorphism($color) {
-    background: rgba($color, 0.23);
+    background: rgba($color, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.4px);
     -webkit-backdrop-filter: blur(1.4px);
     border: $border-light;
 }
 
-$color-primary: #3c1053;
-$color-secondary: #ad5389; 
+$color-primary: #8E86A3; 
+$color-secondary: #B87F86;
 $color-black: #1f2126;
 $color-grey: #4b4f5d;
 $color-white: #f5efed;
