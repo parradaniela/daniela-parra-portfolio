@@ -2,7 +2,6 @@
 
 .navigation {
     @include v.flex-center(column);
-    // height: 100vh;
 
         &-site-item {
             @include v.glassmorphism(v.$color-white);
@@ -16,7 +15,6 @@
             &:hover,
             &:focus {
                 background-color: v.$color-primary;
-
             }
         
         }
