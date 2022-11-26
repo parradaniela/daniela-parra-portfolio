@@ -253,6 +253,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrapper {
   max-width: 1600px;
   width: 90%;
@@ -272,6 +276,7 @@ a {
   padding: 15px;
   background-color: rgba(173, 83, 137, 0.5);
   border-radius: 15px;
+  text-align: center;
 }
 .btn:hover, .btn:focus {
   background-color: #3c1053;
@@ -514,6 +519,14 @@ ion-icon {
 .projects-list-item {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+}
+.projects-list-item .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects-list-item .btn:first-child {
+  margin-right: 10px;
 }
 
 .contact p {
