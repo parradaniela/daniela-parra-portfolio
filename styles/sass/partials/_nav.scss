@@ -1,7 +1,7 @@
 @use './variables' as v;
 
 .navigation {
-    @include v.flex-center(column);
+    @include v.flex-center(row);
 
         &-site-item {
             @include v.glassmorphism(v.$color-black); 

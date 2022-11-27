@@ -1,5 +1,13 @@
 @use '../variables' as v;
 
+.projects.tabs-body-content {
+    padding: 0 5%;
+
+    h2 {
+        padding: 3% 0 1% 0;
+    }
+}
+
 .projects-list {
     display: flex;
     flex-direction: column;

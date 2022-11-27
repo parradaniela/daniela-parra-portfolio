@@ -1,0 +1,48 @@
+@use '../variables' as v;
+
+@media (max-width: 860px) {
+    // Tab changes
+    .tabs {
+        flex-direction: column;
+    
+        &-head-buttons {
+            flex-direction: row;
+            min-height: 10vh;
+            height: auto;   
+            top: 0;
+            left: 0;
+
+            li {
+                align-items: stretch;
+            }
+
+            .tabs-toggle:hover, 
+            .tabs-toggle:focus {
+                transform: translateX(0) translateY(5%);
+            }
+        }
+
+        &-body-content {
+                border-left: v.$border-light;
+                border-radius: 0 0 16px 16px;
+                transform: translateX(0) translateY(-250%);
+                padding: 0 5%;
+
+                &.is-active {
+                    transform: translateY(0);
+                }
+            }
+    }
+    // Skills section
+    .skills-list li,
+    .skills-list li:nth-child(n+9) {
+        flex-basis: 30%;
+        padding: 1%;
+    }
+
+    .skills-list li:last-child {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+}

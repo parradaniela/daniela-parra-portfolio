@@ -230,7 +230,6 @@ html {
 body {
   background: #B87F86;
   background: url("../assets/pexels-azim-islam-1210276-1.jpg");
-  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -282,10 +281,6 @@ img {
 }
 .btn:hover, .btn:focus {
   background-color: #B87F86;
-}
-
-.small {
-  font-size: 1.5rem;
 }
 
 * {
@@ -359,6 +354,11 @@ textarea {
   transition: all 0.3s;
 }
 
+.small {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 ion-icon {
   font-size: 6rem;
   margin: 5% auto;
@@ -370,10 +370,10 @@ ion-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -463,7 +463,6 @@ ion-icon {
   background-color: #B87F86;
 }
 .tabs-body {
-  overflow: hidden;
   position: relative;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
@@ -483,15 +482,15 @@ ion-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   background: rgba(31, 33, 38, 0.3);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.4px);
   -webkit-backdrop-filter: blur(1.4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 0 10%;
   border-radius: 0 16px 16px 0;
   border-left: none;
@@ -555,6 +554,13 @@ ion-icon {
 }
 .skills-list li:hover > *, .skills-list li:hover span {
   color: black;
+}
+
+.projects.tabs-body-content {
+  padding: 0 5%;
+}
+.projects.tabs-body-content h2 {
+  padding: 3% 0 1% 0;
 }
 
 .projects-list {
@@ -676,4 +682,86 @@ ion-icon {
 }
 .form-flex .btn {
   margin-top: 2%;
+}
+
+@media (max-width: 1110px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+  .tabs-head {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
+  .tabs-head-buttons {
+    min-height: 100vh;
+  }
+  .tabs-body {
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%;
+  }
+  .tabs-body-content {
+    min-height: 100vh;
+  }
+  .skills-list li {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    padding: 2%;
+  }
+  .skills-list li:nth-child(n+9) {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .projects-list-item .project-links .btn {
+    padding: 10px;
+  }
+}
+@media (max-width: 860px) {
+  .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs-head-buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 10vh;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+  .tabs-head-buttons li {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .tabs-head-buttons .tabs-toggle:hover,
+.tabs-head-buttons .tabs-toggle:focus {
+    -webkit-transform: translateX(0) translateY(5%);
+            transform: translateX(0) translateY(5%);
+  }
+  .tabs-body-content {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 16px 16px;
+    -webkit-transform: translateX(0) translateY(-250%);
+            transform: translateX(0) translateY(-250%);
+    padding: 0 5%;
+  }
+  .tabs-body-content.is-active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .skills-list li,
+.skills-list li:nth-child(n+9) {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    padding: 1%;
+  }
+  .skills-list li:last-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0;
+  }
 }

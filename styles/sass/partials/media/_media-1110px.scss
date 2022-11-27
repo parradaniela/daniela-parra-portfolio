@@ -1,0 +1,34 @@
+@media (max-width: 1110px) {
+    .wrapper {
+        margin: 0 auto;
+    }
+    // Tab changes
+    .tabs-head {
+        flex-basis: 15%;
+
+        &-buttons {
+            min-height: 100vh;
+        }
+    }
+
+    .tabs-body {
+        flex-basis: 85%;
+
+        &-content {
+            min-height: 100vh;
+        }
+    }
+    // Skills section
+    .skills-list li {
+        flex-basis: 25%;
+        padding: 2%;
+
+        &:nth-child(n+9) {
+            flex-basis: 40%;
+        }
+    }
+    // Projects section
+    .projects-list-item .project-links .btn {
+        padding: 10px;
+    }
+}

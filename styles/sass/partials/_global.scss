@@ -4,7 +4,6 @@ body {
     background: v.$color-secondary; // fallback for older browsers
     // Background photo credit to: Azim Islam at Pexels: https://www.pexels.com/@azim-islam-460924/
     background: url('../assets/pexels-azim-islam-1210276-1.jpg');
-    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -56,8 +55,4 @@ img {
     &:focus {
         background-color: v.$color-secondary;
     }
-}
-
-.small {
-    font-size: 1.5rem;
 }

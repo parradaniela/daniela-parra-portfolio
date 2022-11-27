@@ -43,15 +43,14 @@
     }
 
     &-body {
-        overflow: hidden;
         position: relative;
         flex-basis: 80%;
         z-index: 0;
 
         &-content {
             @include v.flex-center(column);
-            justify-content: space-evenly;
             @include v.glassmorphism(v.$color-black);
+            justify-content: space-evenly;
             padding: 0 10%;
             border-radius: 0 16px 16px 0;
             border-left: none;
