@@ -1,5 +1,9 @@
 @use '../variables' as v;
 
+.contact h2 {
+    padding-bottom: 1%;
+}
+
 .contact p {
     margin: 0;
 
@@ -38,5 +42,9 @@
         textarea {
             min-height: 20rem;
         }   
+
+        .btn {
+            margin-top: 2%;
+        }
     }
 } 

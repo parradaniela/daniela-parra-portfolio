@@ -1,27 +1,49 @@
 @use '../variables' as v;
 
 .projects-list {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: space-between;
+    width: 100%;
 
     &-item {
-        @include v.flex-center(column);
-        flex-basis: 30%;
+        @include v.flex-center(row);
+        justify-content: flex-start;
+
+        &:not(:last-child) {
+            margin-bottom: 1%;
+        }
+
+        .project-display {
+            width: 20%;
+            margin-right: 20px;
+        }
+        .project-details {
+            @include v.flex-center(column);
+            flex-wrap: wrap;
+            width: 75%;
+
+            p {
+                font-size: 2rem;
+
+                &:not(.light) {
+                    margin-bottom: 1%;
+                }
+            }
+        }
 
         .project-links {
             display: flex;
-            flex-wrap: wrap;
             width: 100%;
+            
+            .btn{
+                width: 20%;
+                margin: 3% 0;
 
-            a {
-                width: 100%;
+                &:first-child {
+                    margin-right: 10px;
+                }
             }
-        }
-        .btn{
-            width: 100%;
-            display: block;
         }
     }
 } 

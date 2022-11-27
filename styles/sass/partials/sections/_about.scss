@@ -3,11 +3,13 @@
 .about-text {
     display: flex;
     flex-direction: column;
+
+    p {
+        margin: 3% 0;
+    }
     
     .svg-img {
         width: 40%;
-        // border: 1px solid white;
-        // border-radius: 50%;
         
         &.left {
             float: left;

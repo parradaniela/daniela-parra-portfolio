@@ -15,7 +15,6 @@
         border-radius: 16px 0 0 16px;
         z-index: 10;
         
-        
         &-buttons {
             width: 100%;
             display: flex;
@@ -40,9 +39,8 @@
             .tabs-toggle:active {
                 background-color: v.$color-secondary;
             }
-            
-            }
         }
+    }
 
     &-body {
         overflow: hidden;
@@ -52,6 +50,7 @@
 
         &-content {
             @include v.flex-center(column);
+            justify-content: space-evenly;
             @include v.glassmorphism(v.$color-black);
             padding: 0 10%;
             border-radius: 0 16px 16px 0;
@@ -63,15 +62,9 @@
             width: 100%;
             transform: translateX(-250%);
             transition: all ease-in-out 0.8s;
-            z-index: -1;
     
             &.is-active {
                 transform: translateX(0);
-                z-index: 10;
-            }
-
-            p {
-                margin: 5% 0; 
             }
         }
     }

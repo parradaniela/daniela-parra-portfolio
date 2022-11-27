@@ -22,7 +22,8 @@ h1 {
 
 
 h2, 
-h3 {
+h3,
+p.light {
     font-family: v.$font-heading;
     transition: all .3s;
 }
@@ -35,6 +36,11 @@ label {
     text-transform: uppercase;
 }
 
+h1, 
+h2 {
+    text-align: center;
+}
+
 h1 {
     font-size: 7rem;
 }
@@ -45,10 +51,14 @@ legend {
     padding: 3%;
 }
 
-h3 {
-    font-size: 2.5rem;
-    margin-top: 3%;
-    text-align: center;
+h3, 
+p.light {
+    font-size: 3rem;
+    align-self: flex-start; 
+}
+
+p.light {
+    font-weight: 200;
 }
 
 p, 
