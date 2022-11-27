@@ -1,12 +1,11 @@
 @use './variables' as v;
 
 body {
-    // background: v.$color-primary; /* fallback for old browsers */
-    // background: linear-gradient(to right, v.$color-secondary, v.$color-primary);
+    background: v.$color-secondary; // fallback for older browsers
     // Background photo credit to: Azim Islam at Pexels: https://www.pexels.com/@azim-islam-460924/
-    background: url('../assets/pexels-azim-islam-1210276.jpg');
+    background: url('../assets/pexels-azim-islam-1210276-1.jpg');
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3, p, button, ul, fieldset {

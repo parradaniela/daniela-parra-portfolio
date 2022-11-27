@@ -228,9 +228,10 @@ html {
 
 /* Effect from https://css.glass */
 body {
-  background: url("../assets/pexels-azim-islam-1210276.jpg");
+  background: #B87F86;
+  background: url("../assets/pexels-azim-islam-1210276-1.jpg");
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3, p, button, ul, fieldset {
@@ -300,10 +301,13 @@ html {
   font-size: 62.5%;
 }
 
-h1,
+h1 {
+  font-family: "Dosis", sans-serif;
+}
+
 h2,
 h3 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Dosis", sans-serif;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -329,6 +333,7 @@ legend {
 h3 {
   font-size: 2.5rem;
   margin-top: 3%;
+  text-align: center;
 }
 
 p,
@@ -337,7 +342,7 @@ button,
 label,
 input,
 textarea {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", Sans-Serif;
   font-size: 2.5rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -573,18 +578,28 @@ ion-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.projects-list-item .project-links a {
   width: 100%;
 }
 .projects-list-item .btn {
-  width: 50%;
+  width: 100%;
   display: block;
-}
-.projects-list-item .btn:first-child {
-  margin-right: 10px;
 }
 
 .contact p {
   margin: 0;
+}
+.contact p a {
+  color: #8E86A3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact p a:hover, .contact p a:focus {
+  color: #B87F86;
 }
 
 .form {

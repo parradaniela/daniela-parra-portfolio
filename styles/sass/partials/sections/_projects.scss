@@ -12,16 +12,16 @@
 
         .project-links {
             display: flex;
+            flex-wrap: wrap;
             width: 100%;
-        }
-        .btn{
-            width: 50%;
-            display: block;
 
-            &:first-child {
-                margin-right: 10px;
+            a {
+                width: 100%;
             }
         }
-        
+        .btn{
+            width: 100%;
+            display: block;
+        }
     }
-}
+} 

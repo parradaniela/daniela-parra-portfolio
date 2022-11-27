@@ -16,7 +16,11 @@ html {
     font-size: 62.5%;
 }
 
-h1,
+h1 {
+    font-family: v.$font-name;
+}
+
+
 h2, 
 h3 {
     font-family: v.$font-heading;
@@ -44,6 +48,7 @@ legend {
 h3 {
     font-size: 2.5rem;
     margin-top: 3%;
+    text-align: center;
 }
 
 p, 
