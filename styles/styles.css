@@ -420,6 +420,7 @@ img {
 }
 .navigation-site-item:hover, .navigation-site-item:focus {
   background: rgba(133, 199, 238, 0.8);
+  color: #1f2126;
 }
 .navigation-site-item:hover ion-icon,
 .navigation-site-item:hover ion-icon,

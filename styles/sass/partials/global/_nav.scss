@@ -14,6 +14,7 @@
             &:hover,
             &:focus {
                 background: rgba(v.$color-primary, 0.8);
+                color: v.$color-black;
 
                 ion-icon,
                 ion-icon, 
@@ -25,10 +26,8 @@
             &:active {
                 background-color: v.$color-secondary;
             }
-
-            
-        
         }
+
         .offsite-link {
             transition: all .3s;
         }
