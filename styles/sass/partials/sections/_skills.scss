@@ -1,3 +1,19 @@
+@use '../variables' as v;
+
+@keyframes bounce{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20%)
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .skills-list {
     width: 100%;
     display: flex;
@@ -8,11 +24,10 @@
     li {
         flex-basis: 20%;
         padding: 5% 0;
-        transition: 0.8s;
 
         &:hover > *,
         &:hover span {
-            color: black;
+            animation: bounce .8s ease;
         }
     }
 }

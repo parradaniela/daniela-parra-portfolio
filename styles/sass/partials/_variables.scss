@@ -5,19 +5,18 @@
     align-items: center;
 }
 
-/* Effect from https://css.glass */
+// Effect from https://css.glass, with some edits
 @mixin glassmorphism($color) {
     background: rgba($color, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.4px);
-    -webkit-backdrop-filter: blur(1.4px);
     border: $border-light;
 }
 
-$color-primary: #8E86A3; 
-$color-secondary: #B87F86;
+$transition-timing: all .3s;
+
+$color-primary: #85c7ee; 
+$color-secondary: #CAAC97;
 $color-black: #1f2126;
-$color-grey: #4b4f5d;
 $color-white: #f5efed;
 
 $font-name: 'Dosis', sans-serif;

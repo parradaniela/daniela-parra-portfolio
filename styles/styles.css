@@ -226,16 +226,17 @@ html {
   overflow: hidden;
 }
 
-/* Effect from https://css.glass */
 body {
-  background: #B87F86;
-  background: url("../assets/pexels-azim-islam-1210276-1.jpg");
+  background: #CAAC97;
+  background: url("../assets/pexels-francesco-ungaro-3874719.jpg");
   background-repeat: no-repeat;
 }
 
-h1, h2, h3, p, button, ul, fieldset {
+h1, h2, h3, p, button, ul, li, fieldset, input, label, textarea {
   margin: 0;
   padding: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 li {
@@ -249,13 +250,21 @@ input {
 }
 
 a {
+  color: #85c7ee;
   text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover, a:focus {
+  color: #CAAC97;
 }
 
 img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .wrapper {
@@ -275,7 +284,7 @@ img {
 }
 .desktop-hidden ion-icon:hover,
 .desktop-hidden ion-icon:focus {
-  color: #8E86A3;
+  color: #85c7ee;
 }
 
 .btn {
@@ -283,12 +292,12 @@ img {
   margin: 0 auto;
   margin-top: 3%;
   padding: 15px;
-  background-color: rgba(142, 134, 163, 0.5);
+  background-color: rgba(133, 199, 238, 0.6);
   border-radius: 15px;
   text-align: center;
 }
 .btn:hover, .btn:focus {
-  background-color: #B87F86;
+  background-color: rgba(202, 172, 151, 0.5);
 }
 
 * {
@@ -312,8 +321,6 @@ h2,
 h3,
 p.light {
   font-family: "Dosis", sans-serif;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 h1,
@@ -358,8 +365,6 @@ input,
 textarea {
   font-family: "Source Sans Pro", Sans-Serif;
   font-size: 2.5rem;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .small {
@@ -393,8 +398,6 @@ ion-icon {
   background: rgba(31, 33, 38, 0.3);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.4px);
-  -webkit-backdrop-filter: blur(1.4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,14 +412,24 @@ ion-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
   cursor: pointer;
   width: 100%;
   padding: 5%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 .navigation-site-item:hover, .navigation-site-item:focus {
-  background: #8e86a3;
+  background: rgba(133, 199, 238, 0.8);
+}
+.navigation-site-item:hover ion-icon,
+.navigation-site-item:hover ion-icon,
+.navigation-site-item:hover .small, .navigation-site-item:focus ion-icon,
+.navigation-site-item:focus ion-icon,
+.navigation-site-item:focus .small {
+  color: #1f2126;
+}
+.navigation-site-item:active {
+  background-color: #CAAC97;
 }
 .navigation .offsite-link {
   -webkit-transition: all 0.3s;
@@ -463,12 +476,8 @@ ion-icon {
 }
 .tabs-head-buttons .tabs-toggle:hover,
 .tabs-head-buttons .tabs-toggle:focus {
-  background-color: #8E86A3;
   -webkit-transform: translateX(5%);
           transform: translateX(5%);
-}
-.tabs-head-buttons .tabs-toggle:active {
-  background-color: #B87F86;
 }
 .tabs-body {
   position: relative;
@@ -493,8 +502,6 @@ ion-icon {
   background: rgba(31, 33, 38, 0.3);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.4px);
-  -webkit-backdrop-filter: blur(1.4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -541,6 +548,35 @@ ion-icon {
   margin-left: 40px;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .skills-list {
   width: 100%;
   display: -webkit-box;
@@ -557,11 +593,10 @@ ion-icon {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   padding: 5% 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
 }
 .skills-list li:hover > *, .skills-list li:hover span {
-  color: black;
+  -webkit-animation: bounce 0.8s ease;
+          animation: bounce 0.8s ease;
 }
 
 .projects.tabs-body-content {
@@ -606,7 +641,7 @@ ion-icon {
   margin-bottom: 1%;
 }
 .projects-list-item .project-display {
-  width: 20%;
+  width: 30%;
   margin-right: 20px;
 }
 .projects-list-item .project-details {
@@ -625,7 +660,7 @@ ion-icon {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 75%;
+  width: 65%;
 }
 .projects-list-item .project-details p {
   font-size: 2rem;
@@ -642,6 +677,7 @@ ion-icon {
 .projects-list-item .project-links .btn {
   width: 20%;
   margin: 3% 0;
+  color: #f5efed;
 }
 .projects-list-item .project-links .btn:first-child {
   margin-right: 10px;
@@ -653,14 +689,6 @@ ion-icon {
 
 .contact p {
   margin: 0;
-}
-.contact p a {
-  color: #8E86A3;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.contact p a:hover, .contact p a:focus {
-  color: #B87F86;
 }
 
 .form {
@@ -780,8 +808,16 @@ ion-icon {
   .projects-list {
     margin-bottom: 2%;
   }
+  .projects-list-item .project-links .btn {
+    width: 50%;
+  }
 }
 @media (max-width: 768px) {
+  h3,
+.light {
+    width: 100%;
+    text-align: center;
+  }
   .btn {
     width: 100%;
   }
@@ -794,8 +830,17 @@ ion-icon {
   .navigation .offsite-link {
     display: none;
   }
-  .projects-list-item .project-links .btn {
+  .projects-list-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects-list-item .project-display {
     width: 30%;
+  }
+  .projects-list-item .project-details {
+    width: 100%;
   }
 }
 @media (max-width: 580px) {
@@ -807,11 +852,6 @@ label,
 input,
 textarea {
     font-size: 2.2rem;
-  }
-  h3,
-.light {
-    width: 100%;
-    text-align: center;
   }
   .wrapper {
     width: 95%;
@@ -836,21 +876,6 @@ textarea {
 .skills-list li:nth-child(n+9) {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-  }
-  .projects-list-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .projects-list-item .project-display {
-    width: 30%;
-  }
-  .projects-list-item .project-details {
-    width: 100%;
-  }
-  .projects-list-item .project-links .btn {
-    width: 50%;
   }
 }
 @media (max-width: 463px) {

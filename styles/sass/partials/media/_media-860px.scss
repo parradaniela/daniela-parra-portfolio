@@ -4,7 +4,7 @@
     // Tab changes
     .tabs {
         flex-direction: column;
-    
+    // Tab headings
         &-head-buttons {
             flex-direction: row;
             min-height: 10vh;
@@ -24,7 +24,7 @@
                 }
             }
         }
-
+    // Tab body
         &-body-content {
                 border-left: v.$border-light;
                 border-radius: 0 0 16px 16px;
@@ -52,5 +52,9 @@
     // Projects
     .projects-list {
         margin-bottom: 2%;
+
+        &-item .project-links .btn {
+            width: 50%;
+        } 
     }
 }

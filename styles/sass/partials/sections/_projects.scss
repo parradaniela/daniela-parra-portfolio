@@ -23,13 +23,13 @@
         }
 
         .project-display {
-            width: 20%;
+            width: 30%;
             margin-right: 20px;
         }
         .project-details {
             @include v.flex-center(column);
             flex-wrap: wrap;
-            width: 75%;
+            width: 65%;
 
             p {
                 font-size: 2rem;
@@ -47,6 +47,7 @@
             .btn{
                 width: 20%;
                 margin: 3% 0;
+                color: v.$color-white;
 
                 &:first-child {
                     margin-right: 10px;

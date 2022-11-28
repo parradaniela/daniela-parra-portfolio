@@ -1,15 +1,9 @@
 @use './variables' as v;
 
-// Credit to Stephen Nelson's Fantabulous Tabs Simple Javascript animated tabs codepen for the tab animations. Link: https://codepen.io/nelsonswork/pen/XbRoQo
-
-//TODO: Consider merging this with the tabs partial. There are also a lot of width: 100% around, and a lot of flex related stuff that could probably be a mixin? or maybe a utility class? May also want to rename the classes for tabs, tabs-head, nav-site (might not even need nav-site tbh) so that things can be nested better, especially if merging with tabs partial. 
-
-//TODO: Other things to think about are if we want to do all buttons in one partial? Or based on section? How are button global styles being handled? 
-
+// Many thanks to Stephen Nelson's Fantabulous Tabs Simple Javascript animated tabs codepen for the tab architecture. Link: https://codepen.io/nelsonswork/pen/XbRoQo
 .tabs {
     display: flex;
     
-
     &-head {
         flex-basis: 20%; 
         border-radius: 16px 0 0 16px;
@@ -33,12 +27,8 @@
 
             .tabs-toggle:hover, 
             .tabs-toggle:focus {
-                        background-color: v.$color-primary;
                         transform: translateX(5%);
                     }
-            .tabs-toggle:active {
-                background-color: v.$color-secondary;
-            }
         }
     }
 
