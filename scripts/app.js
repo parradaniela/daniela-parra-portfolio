@@ -1,14 +1,11 @@
 const portfolioApp = {};
 
-portfolioApp.tabletMediaQuery = window.matchMedia('(max-width: 768px)');
-
 portfolioApp.init = () => {
     portfolioApp.toggleTabs();
     portfolioApp.landingPageContact();
-    portfolioApp.attachNewOffsiteLinks(portfolioApp.tabletMediaQuery);
 }
 
-// Credit to the FRONTRU - Web Tutorials video on Youtube "Simple Tabs using HTML, CSS & JavaScript" for the easy to follow logic used in the tab method below. Link: https://youtu.be/3d8AwNea4lM
+// With thanks to the FRONTRU - Web Tutorials video on Youtube "Simple Tabs using HTML, CSS & JavaScript" for the easy to follow logic used in the tab method below. Link: https://youtu.be/3d8AwNea4lM
 
 // Method to handle all tab buttons in the header to toggle to the correct content section
 portfolioApp.toggleTabs = () => {
@@ -43,25 +40,5 @@ portfolioApp.landingPageContact = () => {
         contactSection.classList.add('is-active');
     });
 }
-
-// portfolioApp.attachNewOffsiteLinks = () => {
-//     // Define media query
-//     portfolioApp.tabletMediaQuery.addEventListener("change", () => {
-//         const newGithubDiv = document.createElement('div');
-//         const newLinkedInDiv = document.createElement('div');
-//         const offsiteLinkAnchors = document.querySelectorAll('.offsite-link');
-//         const landingPage = document.querySelector('.landing')
-//         console.log(offsiteLinkAnchors);
-//         console.log(offsiteLinkAnchors[0]);
-//         // offsiteLinkAnchors.forEach((anchor) => {
-//         //     console.log(anchor);
-//         //     newLinkedInDiv.innerHTML = anchor[0].innerHTML;
-//         //     newGithubDiv.innerHTML = anchor[1].innerHTML;
-//         //     console.log(newLinkedInDiv, newGithubDiv);
-//         //     // landingPage.append(newDiv);
-//         // })
-//         // newDiv.append(offsiteLinkAnchors);
-//     })
-// }
 
 portfolioApp.init();

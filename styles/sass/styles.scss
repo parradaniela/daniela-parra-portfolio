@@ -1,10 +1,11 @@
-@use './partials/setup';
-@use './partials/variables';
-@use './partials/global';
-@use './partials/typography';
-// Tab general styles
-@use './partials/nav';
-@use './partials/tabs';
+// Abstracts
+@use './partials/abstracts/setup';
+@use './partials/abstracts/variables';
+@use './partials/abstracts/typography';
+// Global
+@use './partials/global/global';
+@use './partials/global/nav';
+@use './partials/global/tabs';
 // Sections
 @use './partials/sections/about';
 @use './partials/sections/skills';

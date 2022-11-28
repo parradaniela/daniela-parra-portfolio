@@ -1,4 +1,4 @@
-@use './variables' as v;
+@use '../abstracts/variables' as v;
 
 // Many thanks to Stephen Nelson's Fantabulous Tabs Simple Javascript animated tabs codepen for the tab architecture. Link: https://codepen.io/nelsonswork/pen/XbRoQo
 .tabs {
