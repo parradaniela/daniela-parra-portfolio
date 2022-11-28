@@ -713,6 +713,7 @@ ion-icon {
   }
   .projects-list-item .project-links .btn {
     padding: 10px;
+    width: 30%;
   }
 }
 @media (max-width: 860px) {
@@ -737,8 +738,10 @@ ion-icon {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  .tabs-head-buttons .tabs-toggle:hover,
-.tabs-head-buttons .tabs-toggle:focus {
+  .tabs-head-buttons .tabs-toggle {
+    font-size: 2rem;
+  }
+  .tabs-head-buttons .tabs-toggle:hover, .tabs-head-buttons .tabs-toggle:focus {
     -webkit-transform: translateX(0) translateY(5%);
             transform: translateX(0) translateY(5%);
   }
@@ -747,7 +750,9 @@ ion-icon {
     border-radius: 0 0 16px 16px;
     -webkit-transform: translateX(0) translateY(-250%);
             transform: translateX(0) translateY(-250%);
-    padding: 0 5%;
+    padding: 0 5% 2% 5%;
+    height: auto;
+    min-height: 80vh;
   }
   .tabs-body-content.is-active {
     -webkit-transform: translateY(0);
@@ -763,5 +768,75 @@ ion-icon {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding: 0;
+  }
+  .projects-list {
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+  ion-icon {
+    font-size: 5rem;
+  }
+  .navigation .offsite-link {
+    display: none;
+  }
+  .projects-list-item .project-links .btn {
+    width: 30%;
+  }
+}
+@media (max-width: 580px) {
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2.2rem;
+  }
+  h3,
+.light {
+    width: 100%;
+    text-align: center;
+  }
+  .about.tabs-body-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-text .svg-img.right {
+    display: none;
+  }
+  .about h2 {
+    margin-top: 2%;
+    width: 100%;
+  }
+  .skills-list li,
+.skills-list li:nth-child(n+9) {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .projects-list-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects-list-item .project-display {
+    width: 30%;
+  }
+  .projects-list-item .project-details {
+    width: 100%;
+  }
+  .projects-list-item .project-links .btn {
+    width: 50%;
+  }
+}
+@media (max-width: 463px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+  .tabs .tabs-toggle {
+    font-size: 1.8rem;
   }
 }
