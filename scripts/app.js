@@ -44,25 +44,24 @@ portfolioApp.landingPageContact = () => {
     });
 }
 
-portfolioApp.attachNewOffsiteLinks = () => {
-    // Define media query
-    portfolioApp.tabletMediaQuery.addEventListener("change", () => {
-        const newGithubDiv = document.createElement('div');
-        const newLinkedInDiv = document.createElement('div');
-        const offsiteLinkAnchors = document.querySelectorAll('.offsite-link');
-        const landingPage = document.querySelector('.landing')
-        console.log(offsiteLinkAnchors);
-        console.log(offsiteLinkAnchors[0]);
-        // offsiteLinkAnchors.forEach((anchor) => {
-        //     console.log(anchor);
-        //     newLinkedInDiv.innerHTML = anchor[0].innerHTML;
-        //     newGithubDiv.innerHTML = anchor[1].innerHTML;
-        //     console.log(newLinkedInDiv, newGithubDiv);
-        //     // landingPage.append(newDiv);
-        // })
-        // newDiv.append(offsiteLinkAnchors);
-
-    })
-}
+// portfolioApp.attachNewOffsiteLinks = () => {
+//     // Define media query
+//     portfolioApp.tabletMediaQuery.addEventListener("change", () => {
+//         const newGithubDiv = document.createElement('div');
+//         const newLinkedInDiv = document.createElement('div');
+//         const offsiteLinkAnchors = document.querySelectorAll('.offsite-link');
+//         const landingPage = document.querySelector('.landing')
+//         console.log(offsiteLinkAnchors);
+//         console.log(offsiteLinkAnchors[0]);
+//         // offsiteLinkAnchors.forEach((anchor) => {
+//         //     console.log(anchor);
+//         //     newLinkedInDiv.innerHTML = anchor[0].innerHTML;
+//         //     newGithubDiv.innerHTML = anchor[1].innerHTML;
+//         //     console.log(newLinkedInDiv, newGithubDiv);
+//         //     // landingPage.append(newDiv);
+//         // })
+//         // newDiv.append(offsiteLinkAnchors);
+//     })
+// }
 
 portfolioApp.init();

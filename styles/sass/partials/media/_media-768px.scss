@@ -7,6 +7,10 @@
     ion-icon {
         font-size: 5rem;
     }
+    .desktop-hidden {
+        display: block;
+    }
+
     // Navigation
     .navigation .offsite-link {
         display: none;
@@ -15,6 +19,8 @@
     .projects-list-item .project-links .btn {
         width: 30%;
     }
+    // Contact
+    
 
 
 }
