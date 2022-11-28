@@ -1,5 +1,11 @@
 @media (max-width: 768px) {
     // Global
+    h3, 
+    .light {
+        width: 100%;
+        text-align: center;
+    }
+
     .btn {
         width: 100%;
     }
@@ -10,17 +16,21 @@
     .desktop-hidden {
         display: block;
     }
-
     // Navigation
     .navigation .offsite-link {
         display: none;
     }
     // Projects
-    .projects-list-item .project-links .btn {
-        width: 30%;
-    }
-    // Contact
-    
+    .projects-list-item{
+        flex-direction: column;
 
+        .project-display {
+            width: 30%;
+            // align-self: flex-start;
+        }
 
+        .project-details {
+            width: 100%;
+        }
+    } 
 }

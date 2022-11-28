@@ -6,17 +6,6 @@
 
 .contact p {
     margin: 0;
-
-    a {
-        color: v.$color-primary;
-        transition: all .3s;
-
-        &:hover, 
-        &:focus {
-            color: v.$color-secondary;
-        }
-
-    }
 }
 
 .form {

@@ -6,15 +6,27 @@
         &-site-item {
             @include v.glassmorphism(v.$color-black); 
             @include v.flex-center(column);
-            transition: all ease-in-out .3s;
             cursor: pointer;
             width: 100%;
             padding: 5%;
+            transition: all ease-in-out .3s;
 
             &:hover,
             &:focus {
-                background: rgba(v.$color-primary, 1);
+                background: rgba(v.$color-primary, 0.8);
+
+                ion-icon,
+                ion-icon, 
+                .small {
+                    color: v.$color-black;
             }
+            }
+
+            &:active {
+                background-color: v.$color-secondary;
+            }
+
+            
         
         }
         .offsite-link {

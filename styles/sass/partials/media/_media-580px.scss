@@ -8,12 +8,6 @@
         font-size: 2.2rem;
     }
 
-    h3, 
-    .light {
-        width: 100%;
-        text-align: center;
-    }
-
     .wrapper {
         width: 95%;
     }
@@ -43,20 +37,4 @@
     .skills-list li:nth-child(n+9) {
         flex-basis: 50%;
     }
-    // Projects
-    .projects-list-item{
-        flex-direction: column;
-
-        .project-display {
-            width: 30%;
-        }
-
-        .project-details {
-            width: 100%;
-        }
-        
-        .project-links .btn {
-            width: 50%;
-        }
-    } 
 }
