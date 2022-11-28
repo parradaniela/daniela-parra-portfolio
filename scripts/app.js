@@ -3,6 +3,7 @@ const portfolioApp = {};
 portfolioApp.init = () => {
     portfolioApp.toggleTabs();
     portfolioApp.landingPageContact();
+    portfolioApp.clearForm();
 }
 
 // With thanks to the FRONTRU - Web Tutorials video on Youtube "Simple Tabs using HTML, CSS & JavaScript" for the easy to follow logic used in the tab method below. Link: https://youtu.be/3d8AwNea4lM
@@ -39,6 +40,12 @@ portfolioApp.landingPageContact = () => {
         contactToggle.classList.add('is-active');
         contactSection.classList.add('is-active');
     });
+}
+portfolioApp.clearForm = () => {
+    const contactForm = document.querySelector('.form');
+    window.onbeforeunload = () => {
+        contactForm.reset();
+    }
 }
 
 portfolioApp.init();
