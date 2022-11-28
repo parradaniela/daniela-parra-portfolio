@@ -24,13 +24,17 @@
     .projects-list-item{
         flex-direction: column;
 
+        &:not(:last-child) {
+            margin-bottom: 5%;
+        }
+
         .project-display {
             width: 30%;
-            // align-self: flex-start;
         }
 
         .project-details {
             width: 100%;
+            text-align: center;
         }
     } 
 }
