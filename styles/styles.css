@@ -349,7 +349,7 @@ img {
 .wrapper {
   max-width: 1600px;
   width: 90%;
-  margin: 2% auto;
+  margin: 2% auto 0;
 }
 
 .block-span {
@@ -445,7 +445,6 @@ img {
 .tabs-head {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  border-radius: 16px 0 0 16px;
   z-index: 10;
 }
 .tabs-head-buttons {
@@ -509,8 +508,7 @@ img {
           justify-content: space-evenly;
   padding: 0 10%;
   border-radius: 0 16px 16px 0;
-  border-left: none;
-  height: 90vh;
+  min-height: 90vh;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -604,7 +602,7 @@ img {
   padding: 0 5%;
 }
 .projects.tabs-body-content h2 {
-  padding: 3% 0 1% 0;
+  padding: 1% 0;
 }
 
 .projects-list {
@@ -642,7 +640,7 @@ img {
   margin-bottom: 1%;
 }
 .projects-list-item .project-display {
-  width: 30%;
+  width: 25%;
   margin-right: 20px;
 }
 .projects-list-item .project-details {
@@ -661,7 +659,7 @@ img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 65%;
+  width: 75%;
 }
 .projects-list-item .project-details p {
   font-size: 2rem;
@@ -794,6 +792,9 @@ img {
   .tabs-body-content.is-active {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  .about-text p {
+    line-height: 1.5;
   }
   .skills-list li,
 .skills-list li:nth-child(n+9) {

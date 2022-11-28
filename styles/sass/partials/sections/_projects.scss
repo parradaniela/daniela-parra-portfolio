@@ -4,7 +4,7 @@
     padding: 0 5%;
 
     h2 {
-        padding: 3% 0 1% 0;
+        padding: 1% 0;
     }
 }
 
@@ -23,13 +23,13 @@
         }
 
         .project-display {
-            width: 30%;
+            width: 25%;
             margin-right: 20px;
         }
         .project-details {
             @include v.flex-center(column);
             flex-wrap: wrap;
-            width: 65%;
+            width: 75%;
 
             p {
                 font-size: 2rem;
@@ -38,7 +38,7 @@
                     margin-bottom: 1%;
                 }
             }
-        }
+        } 
 
         .project-links {
             display: flex;

@@ -6,7 +6,6 @@
     
     &-head {
         flex-basis: 20%; 
-        border-radius: 16px 0 0 16px;
         z-index: 10;
         
         &-buttons {
@@ -43,8 +42,7 @@
             justify-content: space-evenly;
             padding: 0 10%;
             border-radius: 0 16px 16px 0;
-            border-left: none;
-            height: 90vh;
+            min-height: 90vh;
             position: absolute;
             left: 0px;
             top: 0px;

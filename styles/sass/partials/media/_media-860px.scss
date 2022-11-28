@@ -38,6 +38,11 @@
                 }
             }
     }
+    // About section
+    .about-text p {
+        line-height: 1.5;
+    }
+
     // Skills section
     .skills-list li,
     .skills-list li:nth-child(n+9) {
