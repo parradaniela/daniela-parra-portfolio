@@ -802,7 +802,10 @@ ion-icon {
   h2 {
     font-size: 4rem;
   }
-  p {
+  p,
+label,
+input,
+textarea {
     font-size: 2.2rem;
   }
   h3,
