@@ -13,7 +13,7 @@
 
             &:hover,
             &:focus {
-                background: rgba(v.$color-primary, 0.8);
+                background: v.$color-primary;
                 color: v.$color-black;
 
                 ion-icon,
