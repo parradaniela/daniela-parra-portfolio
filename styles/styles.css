@@ -309,6 +309,7 @@ body {
   background: #CAAC97;
   background: url("../assets/pexels-francesco-ungaro-3874719.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, p, button, ul, li, fieldset, input, label, textarea {
@@ -481,8 +482,8 @@ img {
 }
 .tabs-body {
   position: relative;
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
+  width: 80%;
+  height: 90vh;
   z-index: 0;
 }
 .tabs-body-content {
@@ -506,9 +507,8 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0 10%;
   border-radius: 0 16px 16px 0;
-  min-height: 90vh;
+  height: 90vh;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -521,6 +521,13 @@ img {
 .tabs-body-content.is-active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.scroll {
+  width: 100%;
+  height: 85vh;
+  overflow: scroll;
+  padding: 0 10%;
 }
 
 .about-text {
