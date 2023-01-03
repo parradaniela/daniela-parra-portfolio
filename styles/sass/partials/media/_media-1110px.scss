@@ -14,7 +14,8 @@
     .tabs-body {
         flex-basis: 85%;
 
-        &-content {
+        &-content, 
+        .scroll {
             min-height: 100vh;
         }
     }

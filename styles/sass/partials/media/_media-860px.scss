@@ -1,6 +1,7 @@
 @use '../abstracts/variables' as v;
 
 @media (max-width: 860px) {
+
     // Tab changes
     .tabs {
         flex-direction: column;
@@ -25,18 +26,27 @@
             }
         }
     // Tab body
-        &-body-content {
-                border-left: v.$border-light;
-                border-radius: 0 0 16px 16px;
-                transform: translateX(0) translateY(-250%);
-                padding: 0 5% 2% 5%;
-                height: auto;
-                min-height: 80vh;
+        &-body {
+            width: 100%;
 
-                &.is-active {
-                    transform: translateY(0);
+            &-content {
+                    border-left: v.$border-light;
+                    border-radius: 0 0 16px 16px;
+                    transform: translateX(0) translateY(-250%);
+                    padding: 3% 5% 2%;
+                    height: auto;
+                    width: 100%;
+                    min-height: 100vh;
+    
+                    &.is-active {
+                        transform: translateY(0);
+                    }
                 }
+            .scroll {
+                overflow: visible;
             }
+        }
+        
     }
     // About section
     .about-text p {

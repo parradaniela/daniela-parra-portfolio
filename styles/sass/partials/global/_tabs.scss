@@ -38,11 +38,9 @@
         z-index: 0;
 
         &-content {
-            @include v.flex-center(column);
             @include v.glassmorphism(v.$color-black);
-            justify-content: space-evenly;
-            
             border-radius: 0 16px 16px 0;
+            padding: 2.5% 10% 0;
             height: 90vh;
             position: absolute;
             left: 0px;
@@ -55,12 +53,13 @@
                 transform: translateX(0);
             }
         }
+        
+        .scroll {
+            @include v.flex-center(column);
+            justify-content: space-evenly;
+            width: 100%;
+            height: 85vh;
+            overflow-y: auto;
+        }
     } 
-}
-
-.scroll {
-    width: 100%;
-    height: 85vh;
-    overflow-y: auto;
-    padding: 0 10%;
 }

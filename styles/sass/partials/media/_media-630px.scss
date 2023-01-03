@@ -1,4 +1,4 @@
-@media (max-width: 580px) {
+@media (max-width: 630px) {
     // Global
     h2 {
         font-size: 4rem;
@@ -21,18 +21,14 @@
     }
     // About
     .about {
-
-        &.tabs-body-content {
-            justify-content: center;
-        }
         
-        
-        &-text .svg-img.right {
-            display: none;
-        }
         h2 {
             margin-top: 2%;
             width: 100%;
+        }
+        
+        &-text .svg-img.right {
+            display: none;
         }
     }
     // Skills

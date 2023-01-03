@@ -21,6 +21,11 @@
         display: none;
     }
     // Projects
+
+    .projects, 
+    .projects-list {
+        height: 100%;
+    }
     .projects-list-item{
         flex-direction: column;
 
