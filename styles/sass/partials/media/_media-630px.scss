@@ -17,17 +17,18 @@
     // Tabs
     .tabs-body-content,
     .projects.tabs-body-content {
-        padding: 0 2% 2%;
+        padding: 2% 2%;
     }
     // About
     .about {
-        
+        text-align: center;
         h2 {
-            margin-top: 2%;
+            
             width: 100%;
         }
         
-        &-text .svg-img.right {
+        &-text .svg-img.right,
+        &-text .svg-img.left {
             display: none;
         }
     }

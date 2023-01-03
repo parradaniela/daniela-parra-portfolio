@@ -306,7 +306,7 @@ ion-icon {
 }
 
 body {
-  background: #CAAC97;
+  background: #1f2126;
   background: url("../assets/pexels-francesco-ungaro-3874719.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -350,7 +350,7 @@ img {
 .wrapper {
   max-width: 1600px;
   width: 90%;
-  margin: 2% auto 0;
+  margin: 0% auto;
 }
 
 .block-span {
@@ -462,6 +462,7 @@ img {
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
+  height: 100vh;
 }
 .tabs-head-buttons > * {
   -webkit-box-flex: 1;
@@ -484,29 +485,8 @@ img {
 .tabs-body {
   position: relative;
   width: 80%;
-  height: 90vh;
+  height: 100vh;
   z-index: 0;
-}
-.tabs-body-content {
-  background: rgba(31, 33, 38, 0.3);
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 0 16px 16px 0;
-  padding: 2.5% 10% 0;
-  height: 90vh;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  -webkit-transform: translateX(-250%);
-          transform: translateX(-250%);
-  -webkit-transition: all ease-in-out 0.8s;
-  transition: all ease-in-out 0.8s;
-}
-.tabs-body-content.is-active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 .tabs-body .scroll {
   display: -webkit-box;
@@ -526,19 +506,31 @@ img {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
-  height: 85vh;
+  height: 95vh;
   overflow-y: auto;
 }
-
-.about-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.tabs-body-content {
+  background: rgba(31, 33, 38, 0.3);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0 16px 16px 0;
+  padding: 2.5% 5% 0;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  -webkit-transform: translateX(-250%);
+          transform: translateX(-250%);
+  -webkit-transition: all ease-in-out 0.8s;
+  transition: all ease-in-out 0.8s;
 }
+.tabs-body-content.is-active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .about-text p {
   margin: 3% 0;
 }
@@ -607,7 +599,6 @@ img {
 
 .projects.tabs-body-content h2 {
   padding: 2% 0;
-  margin-top: 4%;
 }
 
 .projects-list {
@@ -725,23 +716,13 @@ img {
 }
 
 @media (max-width: 1110px) {
-  .wrapper {
-    margin: 0 auto;
-  }
   .tabs-head {
     -ms-flex-preferred-size: 15%;
         flex-basis: 15%;
   }
-  .tabs-head-buttons {
-    min-height: 100vh;
-  }
   .tabs-body {
     -ms-flex-preferred-size: 85%;
         flex-basis: 85%;
-  }
-  .tabs-body-content,
-.tabs-body .scroll {
-    min-height: 100vh;
   }
   .skills-list li {
     -ms-flex-preferred-size: 25%;
@@ -796,8 +777,8 @@ img {
             transform: translateX(0) translateY(-250%);
     padding: 3% 5% 2%;
     height: auto;
+    min-height: 50vh;
     width: 100%;
-    min-height: 100vh;
   }
   .tabs-body-content.is-active {
     -webkit-transform: translateY(0);
@@ -805,9 +786,10 @@ img {
   }
   .tabs-body .scroll {
     overflow: visible;
+    height: auto;
   }
   .about-text p {
-    line-height: 1.5;
+    line-height: 1.3;
   }
   .skills-list li,
 .skills-list li:nth-child(n+9) {
@@ -881,13 +863,15 @@ textarea {
   }
   .tabs-body-content,
 .projects.tabs-body-content {
-    padding: 0 2% 2%;
+    padding: 2% 2%;
+  }
+  .about {
+    text-align: center;
   }
   .about h2 {
-    margin-top: 2%;
     width: 100%;
   }
-  .about-text .svg-img.right {
+  .about-text .svg-img.right, .about-text .svg-img.left {
     display: none;
   }
   .skills-list li,
@@ -901,6 +885,6 @@ textarea {
     font-size: 3.5rem;
   }
   .tabs .tabs-toggle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }

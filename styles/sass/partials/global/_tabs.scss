@@ -4,6 +4,7 @@
 .tabs {
     display: flex;
     
+    
     &-head {
         flex-basis: 20%; 
         z-index: 10;
@@ -14,6 +15,7 @@
             flex-direction: column;
             height: 90vh;
             justify-content: stretch;
+            height: 100vh;
             
             > * {
                 flex: 1;
@@ -34,14 +36,22 @@
     &-body {
         position: relative;
         width: 80%;
-        height: 90vh;
+        height: 100vh;
         z-index: 0;
+
+        .scroll {
+            @include v.flex-center(column);
+            justify-content: space-evenly;
+            width: 100%;
+            height: 95vh;
+            overflow-y: auto;
+        }
 
         &-content {
             @include v.glassmorphism(v.$color-black);
             border-radius: 0 16px 16px 0;
-            padding: 2.5% 10% 0;
-            height: 90vh;
+            padding: 2.5% 5% 0;
+            height: 100vh;
             position: absolute;
             left: 0px;
             top: 0px;
@@ -52,14 +62,6 @@
             &.is-active {
                 transform: translateX(0);
             }
-        }
-        
-        .scroll {
-            @include v.flex-center(column);
-            justify-content: space-evenly;
-            width: 100%;
-            height: 85vh;
-            overflow-y: auto;
         }
     } 
 }

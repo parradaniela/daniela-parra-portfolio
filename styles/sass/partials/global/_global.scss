@@ -1,7 +1,7 @@
 @use '../abstracts/variables' as v;
 
 body {
-    background: v.$color-secondary; // fallback for older browsers
+    background: v.$color-black; // fallback for older browsers
     // Background photo credit to: Francesco Ungaro at Pexels: https://www.pexels.com/@francesco-ungaro/
     background: url('../assets/pexels-francesco-ungaro-3874719.jpg');
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ img {
 .wrapper {
     max-width: 1600px;
     width: 90%;
-    margin: 2% auto 0;
+    margin: 0% auto;
 }
 
 .block-span {
