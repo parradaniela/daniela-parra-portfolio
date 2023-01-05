@@ -20,26 +20,4 @@
     .navigation .offsite-link {
         display: none;
     }
-    // Projects
-
-    .projects, 
-    .projects-list {
-        height: 100%;
-    }
-    .projects-list-item{
-        flex-direction: column;
-
-        &:not(:last-child) {
-            margin-bottom: 5%;
-        }
-
-        .project-display {
-            width: 30%;
-        }
-
-        .project-details {
-            width: 100%;
-            text-align: center;
-        }
-    } 
 }

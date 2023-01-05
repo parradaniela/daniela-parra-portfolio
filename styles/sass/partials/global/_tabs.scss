@@ -15,7 +15,7 @@
             flex-direction: column;
             height: 90vh;
             justify-content: stretch;
-            height: 100vh;
+            min-height: 100vh;
             
             > * {
                 flex: 1;
@@ -36,7 +36,7 @@
     &-body {
         position: relative;
         width: 80%;
-        height: 100vh;
+        min-height: 100vh;
         z-index: 0;
 
         .scroll {
@@ -49,10 +49,11 @@
 
         &-content {
             @include v.glassmorphism(v.$color-black);
+            position: absolute;
+            inset: 0;
             border-radius: 0 16px 16px 0;
             padding: 2.5% 5% 0;
-            height: 100vh;
-            position: absolute;
+            min-height: 100vh;
             left: 0px;
             top: 0px;
             width: 100%;

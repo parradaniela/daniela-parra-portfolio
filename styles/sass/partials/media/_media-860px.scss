@@ -30,21 +30,22 @@
             width: 100%;
 
             &-content {
-                    border-left: v.$border-light;
-                    border-radius: 0 0 16px 16px;
-                    transform: translateX(0) translateY(-250%);
-                    padding: 3% 5% 2%;
-                    height: auto;
-                    min-height: 50vh;
-                    width: 100%;
-    
-                    &.is-active {
-                        transform: translateY(0);
-                    }
+                border-left: v.$border-light;
+                border-radius: 0 0 16px 16px;
+                transform: translateX(0) translateY(-250%);
+                padding: 3% 5% 2%;
+                min-height: 50vh;
+                // height: auto;
+                width: 100%;
+
+                &.is-active {
+                    transform: translateY(0);
                 }
+            }
+
             .scroll {
                 overflow: visible;
-                height: auto;
+                min-height: 25vh;
             }
         }
         
@@ -66,11 +67,17 @@
         padding: 0;
     }
     // Projects
-    .projects-list {
-        margin-bottom: 2%;
+    .projects-list-item {
+            min-height: 30vh;
+            justify-content: space-evenly;
 
-        &-item .project-links .btn {
-            width: 50%;
+            .project-display {
+                width: 70%;
+                margin-bottom: 2rem;
+            } 
+
+            .project-links .btn {
+                width: 50%;
+            } 
         } 
     }
-}
