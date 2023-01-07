@@ -15,19 +15,38 @@
     &-button {
         position: absolute;
         background: none;
-        font-size: 4rem;
         z-index: 2;
         top: 50%;
         transform: translateY(-50%);
-        cursor: pointer;
         padding: 0 .5rem;
+        cursor: pointer;
+
+        ion-icon {
+            font-size: 4rem;
+            color: rgba(v.$color-white, 0.8);
+
+            &:hover, 
+            &:focus {
+                color: v.$color-primary;
+            }
+        }
 
         &.prev {
             left: 1rem;
+            
+            &:hover, 
+            &:focus {
+                transform: translateX(-15%) translateY(-50%);
+            }
         }
 
         &.next {
             right: 1rem;
+
+            &:hover, 
+            &:focus {
+                transform: translateX(15%) translateY(-50%);
+            }
         }
     }
 }
@@ -48,14 +67,19 @@
 
         .project-display {
             width: 65%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
         }
         .project-details {
             @include v.flex-center(column);
             flex-wrap: wrap;
             width: 75%;
 
-            p {
+            p, 
+            a {
                 font-size: 2rem;
+                z-index: 3;
             }
         } 
 
@@ -67,6 +91,7 @@
                 width: 20%;
                 margin: 3% 0;
                 color: v.$color-white;
+                z-index: 3;
 
                 &:first-child {
                     margin-right: 10px;

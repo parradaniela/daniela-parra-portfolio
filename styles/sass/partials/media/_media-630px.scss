@@ -17,7 +17,6 @@
     // Tabs
     .tabs-body-content {
         padding: 2% 2%;
-        // min-height: 100vh;
     }
 
     // About
@@ -38,13 +37,26 @@
     .skills-list li:nth-child(n+9) {
         flex-basis: 50%;
     }
-
     // Projects
-    .projects-list-item {
-        // min-height: 85vh;
+    .carousel-button ion-icon {
+            font-size: 5rem;
+        }
+    
+    .projects-list-item .project-details {
+        width: 95%;
     }
 
-    .carousel-button {
-        transform: translateY(100%);
+    .projects-list-item .project-links {
+        flex-direction: column;
+
+        .btn {
+            width: 100%;
+            margin: 10px 0;
+
+            &:first-child {
+                margin-right: 0;
+            }
+        }
     }
+
 } 

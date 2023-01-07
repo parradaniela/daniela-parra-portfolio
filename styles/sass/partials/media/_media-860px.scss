@@ -35,7 +35,6 @@
                 transform: translateX(0) translateY(-250%);
                 padding: 3% 5% 2%;
                 min-height: 50vh;
-                // height: auto;
                 width: 100%;
 
                 &.is-active {
@@ -45,7 +44,7 @@
 
             .scroll {
                 overflow: visible;
-                min-height: 25vh;
+                min-height: 50vh;
             }
         }
         
@@ -67,17 +66,24 @@
         padding: 0;
     }
     // Projects
-    .projects-list-item {
-            min-height: 30vh;
-            justify-content: space-evenly;
+    .carousel-button {
+        top: 5%;
 
-            .project-display {
-                width: 70%;
-                margin-bottom: 2rem;
-            } 
+        &.prev {
+            left: 30%;
+        }
 
-            .project-links .btn {
-                width: 50%;
-            } 
-        } 
+        &.next {
+            right: 30%;
+        }
     }
+
+    .projects-list-item .project-display{
+        width: 70%;
+    }
+            
+    .projects-list-item .project-links .btn {
+        width: 50%;
+    } 
+} 
+    
