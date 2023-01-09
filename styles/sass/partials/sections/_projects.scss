@@ -11,7 +11,7 @@
     width: 100%; 
     height: 100%;
     position: relative;
-
+    //TODO: what does this look like if I don't use absolute positioning on the buttons?? Just keep them below the H2 always. Maybe put in a div and flex them. Screw messing with positioning yknow?
     &-button {
         position: absolute;
         background: none;
