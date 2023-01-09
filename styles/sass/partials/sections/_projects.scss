@@ -1,23 +1,15 @@
 @use '../abstracts/variables' as v;
 
-.projects.tabs-body-content {
-
-    h2 {
-        padding: 2% 0;
-    }
+.projects.tabs-body-content h2 {
+    padding: 2% 0;
 }
 
-.carousel {
-    width: 100%; 
-    height: 100%;
-    position: relative;
-    //TODO: what does this look like if I don't use absolute positioning on the buttons?? Just keep them below the H2 always. Maybe put in a div and flex them. Screw messing with positioning yknow?
+.carousel-nav {
+    text-align: center;
+    padding: 10px 0;
+    
     &-button {
-        position: absolute;
         background: none;
-        z-index: 2;
-        top: 50%;
-        transform: translateY(-50%);
         padding: 0 .5rem;
         cursor: pointer;
 
@@ -31,24 +23,22 @@
             }
         }
 
-        &.prev {
-            left: 1rem;
-            
-            &:hover, 
-            &:focus {
-                transform: translateX(-15%) translateY(-50%);
-            }
+        &.prev:hover, 
+        &.prev:focus {
+            transform: translateX(-15%);
         }
 
-        &.next {
-            right: 1rem;
-
-            &:hover, 
-            &:focus {
-                transform: translateX(15%) translateY(-50%);
-            }
+        &.next:hover, 
+        &.next:focus {
+            transform: translateX(15%);
         }
     }
+}
+
+.carousel {
+    width: 100%; 
+    height: 100%;
+    position: relative;
 }
 
 .projects-list {
@@ -66,7 +56,7 @@
         }
 
         .project-display {
-            width: 65%;
+            width: 75%;
             margin-bottom: 20px;
             border-radius: 10px;
             overflow: hidden;

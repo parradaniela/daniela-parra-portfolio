@@ -17,6 +17,11 @@
         }
     }
     // Projects section
+    .projects-list-item .project-display,
+    .projects-list-item .project-details {
+        width: 85%;
+    }
+
     .projects-list-item .project-links .btn {
         padding: 10px;
         width: 30%;
