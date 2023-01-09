@@ -601,41 +601,35 @@ img {
   padding: 2% 0;
 }
 
+.carousel-nav {
+  text-align: center;
+  padding: 10px 0;
+}
+.carousel-nav-button {
+  background: none;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.carousel-nav-button ion-icon {
+  font-size: 4rem;
+  color: rgba(245, 239, 237, 0.8);
+}
+.carousel-nav-button ion-icon:hover, .carousel-nav-button ion-icon:focus {
+  color: #85c7ee;
+}
+.carousel-nav-button.prev:hover, .carousel-nav-button.prev:focus {
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+}
+.carousel-nav-button.next:hover, .carousel-nav-button.next:focus {
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
 .carousel {
   width: 100%;
   height: 100%;
   position: relative;
-}
-.carousel-button {
-  position: absolute;
-  background: none;
-  z-index: 2;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 0 0.5rem;
-  cursor: pointer;
-}
-.carousel-button ion-icon {
-  font-size: 4rem;
-  color: rgba(245, 239, 237, 0.8);
-}
-.carousel-button ion-icon:hover, .carousel-button ion-icon:focus {
-  color: #85c7ee;
-}
-.carousel-button.prev {
-  left: 1rem;
-}
-.carousel-button.prev:hover, .carousel-button.prev:focus {
-  -webkit-transform: translateX(-15%) translateY(-50%);
-          transform: translateX(-15%) translateY(-50%);
-}
-.carousel-button.next {
-  right: 1rem;
-}
-.carousel-button.next:hover, .carousel-button.next:focus {
-  -webkit-transform: translateX(15%) translateY(-50%);
-          transform: translateX(15%) translateY(-50%);
 }
 
 .projects-list {
@@ -664,7 +658,7 @@ img {
   opacity: 1;
 }
 .projects-list-item .project-display {
-  width: 65%;
+  width: 75%;
   margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
@@ -773,6 +767,10 @@ img {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
   }
+  .projects-list-item .project-display,
+.projects-list-item .project-details {
+    width: 85%;
+  }
   .projects-list-item .project-links .btn {
     padding: 10px;
     width: 30%;
@@ -841,18 +839,6 @@ img {
         flex-basis: 100%;
     padding: 0;
   }
-  .carousel-button {
-    top: 5%;
-  }
-  .carousel-button.prev {
-    left: 30%;
-  }
-  .carousel-button.next {
-    right: 30%;
-  }
-  .projects-list-item .project-display {
-    width: 70%;
-  }
   .projects-list-item .project-links .btn {
     width: 50%;
   }
@@ -875,7 +861,8 @@ img {
   .navigation .offsite-link {
     display: none;
   }
-  .projects-list .project-display {
+  .projects-list .project-display,
+.projects-list .project-details {
     width: 90%;
   }
 }
@@ -912,7 +899,8 @@ textarea {
   .carousel-button ion-icon {
     font-size: 5rem;
   }
-  .projects-list-item .project-details {
+  .projects-list-item .project-details,
+.projects-list-item .project-display {
     width: 95%;
   }
   .projects-list-item .project-links {
@@ -922,7 +910,7 @@ textarea {
             flex-direction: column;
   }
   .projects-list-item .project-links .btn {
-    width: 100%;
+    width: 95%;
     margin: 10px 0;
   }
   .projects-list-item .project-links .btn:first-child {
@@ -936,7 +924,8 @@ textarea {
   .tabs .tabs-toggle {
     font-size: 1.5rem;
   }
-  .projects-list-item .project-display {
+  .projects-list-item .project-display,
+.projects-list-item .project-details {
     width: 100%;
   }
 }

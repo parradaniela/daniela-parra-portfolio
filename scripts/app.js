@@ -45,8 +45,8 @@ portfolioApp.handleCarousel = () => {
         button.addEventListener('click', () => {
             // Checks for the value assigned to the button and returns 1 or -1 depending on the button clicked
             const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-            // Locates the closest carousel and selects the ul in it - setting it this way means that even if we add additional carousels, everything will continue to work as expected
-            const slides = button.closest("[data-carousel]").querySelector('[data-slides]')
+            // Traverses the DOM up to the button's parent div, to its next sibling (the carousel), then to the UL inside it - setting it this way means that even if I add additional carousels later, everything will continue to work as expected
+            const slides = button.parentElement.nextElementSibling.querySelector('[data-slides]')
             // Selects the active slide/li 
             const activeSlide = slides.querySelector('[data-active]')
             // Creates an array of all the children of the slides (the LIs), finds the index of the current active slide and adds the offset to it
@@ -64,7 +64,6 @@ portfolioApp.handleCarousel = () => {
             delete activeSlide.dataset.active
         })
     })
-    console.log(buttons);
 }
 
 portfolioApp.clearForm = () => {
