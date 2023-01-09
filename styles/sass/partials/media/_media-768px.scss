@@ -21,20 +21,9 @@
         display: none;
     }
     // Projects
-    .projects-list-item{
-        flex-direction: column;
 
-        &:not(:last-child) {
-            margin-bottom: 5%;
-        }
-
-        .project-display {
-            width: 30%;
-        }
-
-        .project-details {
-            width: 100%;
-            text-align: center;
-        }
-    } 
+    .projects-list .project-display, 
+    .projects-list .project-details {
+        width: 90%;
+    }
 }

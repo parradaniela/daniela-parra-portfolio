@@ -1,8 +1,6 @@
 @use '../abstracts/variables' as v;
 
 .about-text {
-    display: flex;
-    flex-direction: column;
 
     p {
         margin: 3% 0;

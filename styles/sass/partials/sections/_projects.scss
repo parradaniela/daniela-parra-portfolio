@@ -1,53 +1,87 @@
 @use '../abstracts/variables' as v;
 
-.projects.tabs-body-content {
-    padding: 0 5%;
+.projects.tabs-body-content h2 {
+    padding: 2% 0;
+}
 
-    h2 {
-        padding: 1% 0;
+.carousel-nav {
+    text-align: center;
+    padding: 10px 0;
+    
+    &-button {
+        background: none;
+        padding: 0 .5rem;
+        cursor: pointer;
+
+        ion-icon {
+            font-size: 4rem;
+            color: rgba(v.$color-white, 0.8);
+
+            &:hover, 
+            &:focus {
+                color: v.$color-primary;
+            }
+        }
+
+        &.prev:hover, 
+        &.prev:focus {
+            transform: translateX(-15%);
+        }
+
+        &.next:hover, 
+        &.next:focus {
+            transform: translateX(15%);
+        }
     }
 }
 
+.carousel {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+}
+
 .projects-list {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
     width: 100%;
 
     &-item {
-        @include v.flex-center(row);
-        justify-content: flex-start;
+        @include v.flex-center(column);
+        position: absolute;
+        inset: 0;
+        text-align: center;
+        opacity: 0;
 
-        &:not(:last-child) {
-            margin-bottom: 1%;
+        &[data-active] {
+            opacity: 1;
         }
 
         .project-display {
-            width: 25%;
-            margin-right: 20px;
+            width: 75%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
         }
         .project-details {
             @include v.flex-center(column);
             flex-wrap: wrap;
             width: 75%;
 
-            p {
+            p, 
+            a {
                 font-size: 2rem;
-
-                &:not(.light) {
-                    margin-bottom: 1%;
-                }
+                z-index: 3;
             }
         } 
 
         .project-links {
-            display: flex;
+            @include v.flex-center(row);
             width: 100%;
             
             .btn{
                 width: 20%;
                 margin: 3% 0;
                 color: v.$color-white;
+                z-index: 3;
 
                 &:first-child {
                     margin-right: 10px;

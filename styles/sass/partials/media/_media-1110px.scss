@@ -1,22 +1,11 @@
 @media (max-width: 1110px) {
-    .wrapper {
-        margin: 0 auto;
-    }
     // Tab headings
     .tabs-head {
         flex-basis: 15%;
-
-        &-buttons {
-            min-height: 100vh;
-        }
     }
     // Tab body
     .tabs-body {
         flex-basis: 85%;
-
-        &-content {
-            min-height: 100vh;
-        }
     }
     // Skills section
     .skills-list li {
@@ -28,6 +17,11 @@
         }
     }
     // Projects section
+    .projects-list-item .project-display,
+    .projects-list-item .project-details {
+        width: 85%;
+    }
+
     .projects-list-item .project-links .btn {
         padding: 10px;
         width: 30%;

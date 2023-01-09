@@ -5,6 +5,12 @@
     }
     // Tabs
     .tabs .tabs-toggle {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
+    // Projects
+    .projects-list-item .project-display, 
+    .projects-list-item .project-details {
+        width: 100%;
+    }
+
 }
