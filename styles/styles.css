@@ -712,10 +712,6 @@ img {
   margin-right: 10px;
 }
 
-.contact h2 {
-  padding-bottom: 1%;
-}
-
 .contact p {
   margin: 0;
 }
@@ -731,9 +727,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.form-flex legend {
-  padding: 2% 0;
 }
 .form-flex label {
   margin: 2% 0;
