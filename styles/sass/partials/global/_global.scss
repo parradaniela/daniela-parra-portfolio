@@ -8,7 +8,7 @@ body {
 }
 
 svg {
-    fill: white;
+    fill: v.$color-white;
 }
 
 
@@ -72,13 +72,15 @@ img {
     margin: 0 auto;
     margin-top: 3%;
     padding: 15px;
-    background-color: rgba(v.$color-primary, 0.6);
+    background-color: v.$color-primary;
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
+    color: v.$color-black;
 
     &:hover, 
     &:focus {
-        background-color: rgba(v.$color-secondary, 0.5);
+        color: v.$color-black;
+        background-color: v.$color-secondary;
     }
 }

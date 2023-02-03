@@ -283,6 +283,7 @@ p.light {
 
 p,
 a,
+span,
 button,
 label,
 input,
@@ -310,7 +311,7 @@ body {
 }
 
 svg {
-  fill: white;
+  fill: #f5efed;
 }
 
 h1, h2, h3, p, button, ul, li, fieldset, input, label, textarea {
@@ -374,13 +375,15 @@ img {
   margin: 0 auto;
   margin-top: 3%;
   padding: 15px;
-  background-color: rgba(133, 199, 238, 0.6);
+  background-color: #85c7ee;
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
+  color: #1f2126;
 }
 .btn:hover, .btn:focus {
-  background-color: rgba(202, 172, 151, 0.5);
+  color: #1f2126;
+  background-color: #CAAC97;
 }
 
 .navigation {
@@ -665,6 +668,17 @@ img {
   margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+}
+.projects-list-item .project-display span {
+  background-color: #272AB0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .projects-list-item .project-details {
   display: -webkit-box;
@@ -708,7 +722,6 @@ img {
 .projects-list-item .project-links .btn {
   width: 20%;
   margin: 3% 0;
-  color: #f5efed;
   z-index: 3;
 }
 .projects-list-item .project-links .btn:first-child {

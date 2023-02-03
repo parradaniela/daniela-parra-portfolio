@@ -1,3 +1,4 @@
+import { populateCarousel } from "./populateCarousel.js";
 const portfolioApp = {};
 
 // With thanks to the FRONTRU - Web Tutorials video on Youtube "Simple Tabs using HTML, CSS & JavaScript" for the easy to follow logic used in the tab method below. Link: https://youtu.be/3d8AwNea4lM
@@ -78,6 +79,7 @@ portfolioApp.init = () => {
     portfolioApp.landingPageContact();
     portfolioApp.clearForm();
     portfolioApp.handleCarousel();
+    populateCarousel();
 }
 
 portfolioApp.init();
