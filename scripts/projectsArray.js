@@ -32,7 +32,7 @@ export const projectsArray = [
         tech: "HTML, SCSS, ES6",
         liveURL: "https://singular-begonia-bd09cf.netlify.app/",
         repoURL: "https://github.com/weatherAppJuno/weatherApp",
-        desc: `Vanilla JS application that uses the AccuWeather API to pull current forecast data for Toronto, and any city within Ontario entered by the user. Pair project with Radojko Radulovic.`
+        desc: `Vanilla JS application that uses the AccuWeather API to pull current forecast data for Toronto, and any city within Ontario entered by the user. Pair project with <a href="https://radoyko.com/">Radojko Radulovic</a>.`
     }, 
 
     {
@@ -41,7 +41,7 @@ export const projectsArray = [
         tech: "React.js, CSS",
         liveURL: "https://superlative-pony-40db95.netlify.app/",
         repoURL: "https://github.com/madLibsClone/FunnyLibs/tree/main",
-        desc: `Description goes here`,
+        desc: `A React.js mad libs app designed together with <a href="https://www.tylergeorge.ca/">Tyler George</a>. The app chooses from three random blocks of text and allows the user to replace some words in the text through a form. Uses React Router to navigate between different pages. Check back for updates, we are working on adding more functionality!`,
         inProgress: true
     }
 ];

@@ -7,12 +7,6 @@ body {
     @include svg.svg-background;
 }
 
-svg {
-    fill: v.$color-white;
-}
-
-
-
 h1, h2, h3, p, button, ul, li, fieldset, input, label, textarea {
     margin: 0;
     padding: 0;
@@ -36,7 +30,7 @@ a {
 
     &:hover, 
     &:focus {
-        color: v.$color-secondary;
+        color: v.$color-turquoise;
     }
 }
 
@@ -80,7 +74,7 @@ img {
 
     &:hover, 
     &:focus {
-        color: v.$color-black;
+        color: v.$color-white;
         background-color: v.$color-secondary;
     }
 }
