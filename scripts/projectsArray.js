@@ -5,7 +5,7 @@ export const projectsArray = [
         tech: "React.js, CSS",
         liveURL: "https://wondrous-fudge-759bc2.netlify.app/",
         repoURL: "https://github.com/parradaniela/dnd-5e-character-race-app",
-        desc: "React.js App that allows the user to select a standard race from the 5th edition of Dungeons and Dragons using a dropdown menu, then displays information about that race by fetching data from a RESTFUL API to populate a number of tabs."
+        desc: "React.js App that allows the user to select a standard race from the 5th edition of Dungeons and Dragons using a dropdown menu, then displays information about that race by fetching data from a RESTful API to populate a number of tabs. Uses the React Context API to manage prop data across the app structure."
     },
 
     {
