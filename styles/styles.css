@@ -689,6 +689,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 75%;

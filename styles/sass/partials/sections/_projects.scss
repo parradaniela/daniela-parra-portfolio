@@ -75,6 +75,7 @@
         }
         .project-details {
             @include v.flex-center(column);
+            margin-top: 10px;
             flex-wrap: wrap;
             width: 75%;
 
