@@ -28,13 +28,14 @@
     // Tab body
         &-body {
             width: 100%;
+            
 
             &-content {
                 border-left: v.$border-light;
                 border-radius: 0 0 16px 16px;
                 transform: translateX(0) translateY(-250%);
                 padding: 3% 5% 2%;
-                min-height: 50vh;
+                min-height: 40vh;
                 width: 100%;
 
                 &.is-active {
@@ -44,7 +45,7 @@
 
             .scroll {
                 overflow: visible;
-                min-height: 50vh;
+                min-height: 40vh;
             }
         }
         
@@ -66,8 +67,7 @@
         padding: 0;
     }
     // Projects
-            
     .projects-list-item .project-links .btn {
         width: 50%;
-    } 
+    }
 } 
