@@ -661,7 +661,6 @@ img {
 }
 .projects-list-item .project-display {
   width: 75%;
-  margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -819,7 +818,7 @@ img {
     -webkit-transform: translateX(0) translateY(-250%);
             transform: translateX(0) translateY(-250%);
     padding: 3% 5% 2%;
-    min-height: 50vh;
+    min-height: 40vh;
     width: 100%;
   }
   .tabs-body-content.is-active {
@@ -828,7 +827,7 @@ img {
   }
   .tabs-body .scroll {
     overflow: visible;
-    min-height: 50vh;
+    min-height: 40vh;
   }
   .about-text p {
     line-height: 1.3;
