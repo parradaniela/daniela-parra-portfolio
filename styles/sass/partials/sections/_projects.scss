@@ -9,17 +9,18 @@
     padding: 10px 0;
     
     &-button {
-        background: none;
-        padding: 0 .5rem;
+        background-color: transparent;
+        margin: 0 1rem;
         cursor: pointer;
-
+        
         ion-icon {
+            border-radius: 50%;
             font-size: 4rem;
-            color: rgba(v.$color-white, 0.8);
+            color: v.$color-primary;
 
             &:hover, 
             &:focus {
-                color: v.$color-primary;
+                color: v.$color-white;
             }
         }
 
@@ -56,7 +57,7 @@
         }
 
         .project-display {
-            width: 75%;
+            width: 60%;
             border-radius: 10px;
             overflow: hidden;
             position: relative;

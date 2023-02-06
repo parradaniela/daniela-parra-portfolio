@@ -378,8 +378,8 @@ img {
   color: #1f2126;
 }
 .btn:hover, .btn:focus {
-  color: #f5efed;
-  background-color: #572780;
+  color: #1f2126;
+  background-color: #f5efed;
 }
 
 .navigation {
@@ -402,6 +402,8 @@ img {
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +435,7 @@ img {
   color: #1f2126;
 }
 .navigation-site-item:active {
-  background-color: #572780;
+  background-color: #57DCBE;
 }
 .navigation .offsite-link {
   -webkit-transition: all 0.3s;
@@ -515,6 +517,8 @@ img {
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
   position: absolute;
   inset: 0;
   border-radius: 0 16px 16px 0;
@@ -523,6 +527,7 @@ img {
   left: 0px;
   top: 0px;
   width: 100%;
+  opacity: 0;
   -webkit-transform: translateX(-250%);
           transform: translateX(-250%);
   -webkit-transition: all ease-in-out 0.8s;
@@ -531,6 +536,7 @@ img {
 .tabs-body-content.is-active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  opacity: 1;
 }
 
 .about-text p {
@@ -608,16 +614,17 @@ img {
   padding: 10px 0;
 }
 .carousel-nav-button {
-  background: none;
-  padding: 0 0.5rem;
+  background-color: transparent;
+  margin: 0 1rem;
   cursor: pointer;
 }
 .carousel-nav-button ion-icon {
+  border-radius: 50%;
   font-size: 4rem;
-  color: rgba(245, 239, 237, 0.8);
+  color: #85c7ee;
 }
 .carousel-nav-button ion-icon:hover, .carousel-nav-button ion-icon:focus {
-  color: #85c7ee;
+  color: #f5efed;
 }
 .carousel-nav-button.prev:hover, .carousel-nav-button.prev:focus {
   -webkit-transform: translateX(-15%);
@@ -660,7 +667,7 @@ img {
   opacity: 1;
 }
 .projects-list-item .project-display {
-  width: 75%;
+  width: 60%;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -747,9 +754,6 @@ img {
 .form-flex textarea {
   padding: 10px;
 }
-.form-flex textarea {
-  min-height: 18rem;
-}
 .form-flex .btn {
   margin-top: 2%;
 }
@@ -807,8 +811,8 @@ img {
     font-size: 2rem;
   }
   .tabs-head-buttons .tabs-toggle:hover, .tabs-head-buttons .tabs-toggle:focus {
-    -webkit-transform: translateX(0) translateY(5%);
-            transform: translateX(0) translateY(5%);
+    -webkit-transform: translateX(0) translateY(10%);
+            transform: translateX(0) translateY(10%);
   }
   .tabs-body {
     width: 100%;
@@ -819,7 +823,6 @@ img {
     -webkit-transform: translateX(0) translateY(-250%);
             transform: translateX(0) translateY(-250%);
     padding: 3% 5% 2%;
-    min-height: 40vh;
     width: 100%;
   }
   .tabs-body-content.is-active {
@@ -828,7 +831,6 @@ img {
   }
   .tabs-body .scroll {
     overflow: visible;
-    min-height: 40vh;
   }
   .about-text p {
     line-height: 1.3;

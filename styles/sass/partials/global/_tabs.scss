@@ -57,11 +57,13 @@
             left: 0px;
             top: 0px;
             width: 100%;
+            opacity: 0;
             transform: translateX(-250%);
             transition: all ease-in-out 0.8s;
     
             &.is-active {
                 transform: translateX(0);
+                opacity: 1; 
             }
         }
     } 

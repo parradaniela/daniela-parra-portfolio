@@ -2,6 +2,7 @@ export const projectsArray = [
     {
         heading: "DnD 5e Character Race App",
         image: "./assets/dnd-app.png",
+        mobileImg: "./assets/dnd-app-mobile.png",
         tech: "React.js, CSS",
         liveURL: "https://wondrous-fudge-759bc2.netlify.app/",
         repoURL: "https://github.com/parradaniela/dnd-5e-character-race-app",
@@ -11,6 +12,7 @@ export const projectsArray = [
     {
         heading: "Love in a Time of Allergies",
         image: "./assets/love-allergies.png",
+        mobileImg: "./assets/love-allergies-mobile.png",
         tech: "React.js, CSS, Firebase",
         liveURL: "https://love-in-a-time-of-allergies.netlify.app/",
         repoURL: "https://github.com/LoveInATimeOfAllergies/loveInATimeOfAllergies",
@@ -20,6 +22,7 @@ export const projectsArray = [
     {
         heading: "Sanctuary Helpers",
         image: "./assets/sanctuary-helpers.png",
+        mobileImg: "./assets/sanctuary-helpers-mobile.png",
         tech: "HTML, SCSS, ES6",
         liveURL: "https://guileless-bonbon-c2a588.netlify.app",
         repoURL: "https://github.com/parradaniela/sanctuary-helpers",
@@ -29,6 +32,7 @@ export const projectsArray = [
     {
         heading: "Ontario Weather App",
         image: "./assets/weather-app.png",
+        mobileImg: "./assets/weather-app-mobile.png",
         tech: "HTML, SCSS, ES6",
         liveURL: "https://singular-begonia-bd09cf.netlify.app/",
         repoURL: "https://github.com/weatherAppJuno/weatherApp",
@@ -38,6 +42,7 @@ export const projectsArray = [
     {
         heading: "FunnyLibs!",
         image: "./assets/funnylibs.png",
+        mobileImg: "./assets/funnylibs-mobile.png",
         tech: "React.js, CSS",
         liveURL: "https://superlative-pony-40db95.netlify.app/",
         repoURL: "https://github.com/madLibsClone/FunnyLibs/tree/main",

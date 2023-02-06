@@ -30,7 +30,7 @@ a {
 
     &:hover, 
     &:focus {
-        color: v.$color-turquoise;
+        color: v.$color-secondary;
     }
 }
 
@@ -74,7 +74,7 @@ img {
 
     &:hover, 
     &:focus {
-        color: v.$color-white;
-        background-color: v.$color-secondary;
+        color: v.$color-black;
+        background-color: v.$color-white;
     }
 }
