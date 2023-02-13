@@ -37,7 +37,7 @@ export const projectsArray = [
         liveURL: "https://singular-begonia-bd09cf.netlify.app/",
         repoURL: "https://github.com/weatherAppJuno/weatherApp",
         desc: `Vanilla JS application that uses the AccuWeather API to pull current forecast data for Toronto, and any city within Ontario entered by the user. Pair project with <a href="https://radoyko.com/">Radojko Radulovic</a>.`
-    }, 
+    },
 
     {
         heading: "FunnyLibs!",
