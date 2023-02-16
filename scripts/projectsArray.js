@@ -9,15 +9,15 @@ export const projectsArray = [
         desc: "React.js App that allows the user to select a standard race from the 5th edition of Dungeons and Dragons using a dropdown menu, then displays information about that race by fetching data from a RESTful API to populate a number of tabs. Uses the React Context API to manage prop data across the app structure."
     },
 
-    {
-        heading: "Love in a Time of Allergies",
-        image: "./assets/love-allergies.png",
-        mobileImg: "./assets/love-allergies-mobile.png",
-        tech: "React.js, CSS, Firebase",
-        liveURL: "https://love-in-a-time-of-allergies.netlify.app/",
-        repoURL: "https://github.com/LoveInATimeOfAllergies/loveInATimeOfAllergies",
-        desc: `A React.js app that allows the user to save dinner parties with guest names and dietary restrictions to a Firebase database, then connects to a RESTFUL API to source 20 dinner recipes that avoid all of the group's dietary restrictions. Group project designed with <a href="https://github.com/leohon">Leo Hon</a>, <a href="https://github.com/Gogulan12">Gogulan Ravichandran</a>, and <a href="https://github.com/LucPasq">Lucas Pasqualoni</a>.`
-    },
+    // {
+    //     heading: "Love in a Time of Allergies",
+    //     image: "./assets/love-allergies.png",
+    //     mobileImg: "./assets/love-allergies-mobile.png",
+    //     tech: "React.js, CSS, Firebase",
+    //     liveURL: "https://love-in-a-time-of-allergies.netlify.app/",
+    //     repoURL: "https://github.com/LoveInATimeOfAllergies/loveInATimeOfAllergies",
+    //     desc: `A React.js app that allows the user to save dinner parties with guest names and dietary restrictions to a Firebase database, then connects to a RESTFUL API to source 20 dinner recipes that avoid all of the group's dietary restrictions. Group project designed with <a href="https://github.com/leohon">Leo Hon</a>, <a href="https://github.com/Gogulan12">Gogulan Ravichandran</a>, and <a href="https://github.com/LucPasq">Lucas Pasqualoni</a>.`
+    // },
 
     {
         heading: "Sanctuary Helpers",
