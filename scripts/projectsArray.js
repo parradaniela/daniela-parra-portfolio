@@ -6,8 +6,7 @@ export const projectsArray = [
     tech: "React.js, TypeScript, Firebase Firestore, TailwindCSS",
     liveURL: "https://jobi-board.netlify.app",
     repoURL: "https://github.com/parradaniela/jobi-jobboard",
-    desc: "My most recent and currently in-progress project! It aims to be a multi-page, responsive and accessible website conversion from a Figma mockup that will integrate with a Firebase Firestore to provide functionality. Designed mobile-first, using reusable UI components and managing state through the React Context API.",
-    inProgress: true,
+    desc: "My most recent project! It is a fully responsive website conversion from a Figma mockup that includes 'In Progress' and 'Error' pages and connects to a Firebase Firestore to fetch data. Designed mobile-first, using reusable UI components and managing state through the React Context API.",
   },
   {
     heading: "Love in a Time of Allergies",
@@ -36,7 +35,7 @@ export const projectsArray = [
     tech: "HTML, SCSS, ES6",
     liveURL: "https://guileless-bonbon-c2a588.netlify.app",
     repoURL: "https://github.com/parradaniela/sanctuary-helpers",
-    desc: `Multi-page, responsive, accessible PSD conversion following desktop-first design. The original design files can  be viewed <a href="https://drive.google.com/drive/folders/1OcFeadXvm2a0Wr2ZjoA_mDNScxWVZDOv?usp=sharing">here</a>`,
+    desc: `Multi-page, responsive PSD conversion bootcamp project designed desktop-first. The original design files can be viewed <a href="https://drive.google.com/drive/folders/1OcFeadXvm2a0Wr2ZjoA_mDNScxWVZDOv?usp=sharing">here</a>.`,
   },
 
   {
@@ -46,6 +45,6 @@ export const projectsArray = [
     tech: "HTML, SCSS, ES6",
     liveURL: "https://singular-begonia-bd09cf.netlify.app/",
     repoURL: "https://github.com/weatherAppJuno/weatherApp",
-    desc: `Vanilla JS application that uses the AccuWeather API to pull current forecast data for Toronto, and any city within Ontario entered by the user. Pair project with <a href="https://radoyko.com/">Radojko Radulovic</a>.`,
+    desc: `Vanilla JS application that uses the AccuWeather API to pull current forecast data for Toronto, and any city within Ontario entered by the user. Pair project with <a href="https://radoyko.com/">Radojko Radulovic</a> during bootcamp.`,
   },
 ];
