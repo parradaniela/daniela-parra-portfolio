@@ -1,185 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Roboto&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Daniela Parra</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper tabs">
-        <header class="tabs-head">
-            <nav class="navigation">
-                <ul class="tabs-head-buttons">
-                    <li><button class="navigation-site-item tabs-toggle is-active" autofocus>Home</button></li>
-                    <li>
-                        <button class="navigation-site-item tabs-toggle">About</button>
-                    </li>
-                    <li>
-                        <button class="navigation-site-item tabs-toggle">Skills</button>
-                    </li>
-                    <li>
-                        <button class="navigation-site-item tabs-toggle">Projects</button>
-                    </li>
-                    <li>
-                        <button class="navigation-site-item tabs-toggle" id="contact-toggle">Contact</button>
-                    </li>
-                    <li class="offsite-link">
-                        <a href="https://github.com/parradaniela" class="navigation-site-item" target="_blank" rel="noopener noreferrer">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <p class="small">Visit my Github page</p>
-                        </a>
-                    </li>
-                    <li class="offsite-link">
-                        <a href="https://www.linkedin.com/in/parradaniela/" class="navigation-site-item" target="_blank" rel="noopener noreferrer">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                            <p class="small">Visit my LinkedIn page</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav> 
-        </header>
-        <main class="tabs-body">
-            <section class="landing tabs-body-content is-active">
-                <div class="scroll">
-                    <h1>Daniela Parra</h1>
-                    <h2>Toronto based web developer</h2>
-                    <button class="btn" id="home-contact-btn">Send me a message</button>
-                    <div class="desktop-hidden">
-                        <a href="https://github.com/parradaniela" target="_blank" rel="noopener noreferrer">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <p class="sr-only">Visit my Github page</p>
-                        </a>
-                        <a href="https://www.linkedin.com/in/parradaniela/" target="_blank" rel="noopener noreferrer">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                            <p class="sr-only">Visit my LinkedIn page</p>
-                        </a>
-                    </div> <!-- END .desktop-hidden -->
+      <header class="tabs-head">
+        <nav class="navigation">
+          <ul class="tabs-head-buttons">
+            <li>
+              <button
+                class="navigation-site-item tabs-toggle is-active"
+                autofocus
+              >
+                Home
+              </button>
+            </li>
+            <li>
+              <button class="navigation-site-item tabs-toggle">About</button>
+            </li>
+            <li>
+              <button class="navigation-site-item tabs-toggle">Skills</button>
+            </li>
+            <li>
+              <button class="navigation-site-item tabs-toggle">Projects</button>
+            </li>
+            <li>
+              <button
+                class="navigation-site-item tabs-toggle"
+                id="contact-toggle"
+              >
+                Contact
+              </button>
+            </li>
+            <li class="offsite-link">
+              <a
+                href="https://github.com/parradaniela"
+                class="navigation-site-item"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+                <p class="small">Visit my Github page</p>
+              </a>
+            </li>
+            <li class="offsite-link">
+              <a
+                href="https://www.linkedin.com/in/parradaniela/"
+                class="navigation-site-item"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <p class="small">Visit my LinkedIn page</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="tabs-body">
+        <section class="landing tabs-body-content is-active">
+          <div class="scroll">
+            <h1>Daniela Parra</h1>
+            <h2>Toronto based web developer</h2>
+            <button class="btn" id="home-contact-btn">Send me a message</button>
+            <div class="desktop-hidden">
+              <a
+                href="https://github.com/parradaniela"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+                <p class="sr-only">Visit my Github page</p>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/parradaniela/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <p class="sr-only">Visit my LinkedIn page</p>
+              </a>
+            </div>
+            <!-- END .desktop-hidden -->
+          </div>
+        </section>
+
+        <section class="about tabs-body-content">
+          <div class="scroll">
+            <h2>About me</h2>
+            <div class="about-text">
+              <div>
+                <div class="svg-img left">
+                  <img
+                    src="./assets/svg/undraw_pair_programming_re_or4x.svg"
+                    alt="Stylized image of two people working together at a computer"
+                  />
                 </div>
-            </section> 
-    
-            <section class="about tabs-body-content">
-                <div class="scroll">
-                    <h2>About me</h2>
-                    <div class="about-text">
-                        <div>
-                            <div class="svg-img left">
-                                <img src="./assets/undraw_pair_programming_re_or4x.svg" alt="Stylized image of two people working together at a computer">
-                            </div> <!-- END .svg-img .left -->
-                            <p>Hi, I'm Daniela, and I'm a Front End Web Developer specializing in building exceptional, responsive and accessible web applications. I'm looking to join a team that works on varied and unique projects, in order to continue evolving and diversifying my skills.</p>
-                        </div>
-                        <p>In my previous career, I was an event planner and office admin, working across private and non-profit organizations, where I honed adaptive problem solving skills and a keen eye for catching all the small details.</p>
-                        
-                        <div>
-                            <div class="svg-img right">
-                                <img src="./assets/undraw_cat_re_gkh9.svg" alt="Stylized image of a cat">
-                            </div> <!-- END .svg-img .right -->
-                            <p>When I'm not coding, you can find me upside-down and in the air as I swing on aerial silks and hoops, or petting my two cats!</p>
-                        </div>
-                    </div> <!-- END .about-text-->
-                </div> <!-- END .scroll -->
-            </section>
+                <!-- END .svg-img .left -->
+                <p>
+                  Hi, I'm Daniela, and I'm a Front End Web Developer
+                  specializing in building exceptional, responsive and
+                  accessible web applications. I'm looking to join a team that
+                  works on varied and unique projects, in order to continue
+                  evolving and diversifying my skills.
+                </p>
+              </div>
+              <p>
+                In my previous career, I was an event planner and office admin,
+                working across private and non-profit organizations, where I
+                honed adaptive problem solving skills and a keen eye for
+                catching all the small details.
+              </p>
 
-            <section class="skills tabs-body-content">
-                <div class="scroll">
-                    <h2>What I Bring to a Project</h2>
-                    <ul class="skills-list">
-                        <li>
-                            <ion-icon name="logo-html5"></ion-icon>
-                            <p>HTML5</p>
-                        </li>
-                        <li>
-                            <ion-icon name="logo-css3"></ion-icon>
-                            <p>CSS3</p>
-                        </li>
-                        <li>
-                            <ion-icon name="logo-sass"></ion-icon>
-                            <p>Sass</p>
-                        </li>
-                        <li>
-                            <ion-icon name="logo-javascript"></ion-icon>
-                            <p>JS6</p>
-                        </li>
-                        <li>
-                            <ion-icon name="logo-react"></ion-icon>
-                            <p>React</p>
-                        </li>
-                        <li>
-                            <ion-icon name="logo-github"></ion-icon>
-                            <p>Github</p>
-                        </li>
-                        <li>
-                            <ion-icon name="git-branch-outline"></ion-icon>
-                            <p>Git</p>
-                        </li>
-                        <li>
-                            <ion-icon name="logo-firebase"></ion-icon>
-                            <p>Firebase</p>
-                        </li>
-                        <li>
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                            <p><span class="block-span">Responsive</span> Design</p>
-                        </li>
-                        <li>
-                            <ion-icon name="accessibility-outline"></ion-icon>
-                            <p><span class="block-span">Web</span> Accessibility</p>
-                        </li>
-                    </ul>
-                </div> <!-- END .scroll -->
-            </section>
+              <div>
+                <div class="svg-img right">
+                  <img
+                    src="./assets/svg/undraw_cat_re_gkh9.svg"
+                    alt="Stylized image of a cat"
+                  />
+                </div>
+                <!-- END .svg-img .right -->
+                <p>
+                  When I'm not coding, you can find me upside-down and in the
+                  air as I swing on aerial silks and hoops, or petting my two
+                  cats!
+                </p>
+              </div>
+            </div>
+            <!-- END .about-text-->
+          </div>
+          <!-- END .scroll -->
+        </section>
 
-            <section class="projects tabs-body-content">
-                <div class="scroll">
-                    <h2>What I've Worked On</h2>
-                    <div class="carousel-nav">
-                        <button class="carousel-nav-button prev" data-carousel-button="prev" aria-label="Previous project">
-                            <ion-icon name="arrow-back-circle"></ion-icon>
-                        </button>
-                        <button class="carousel-nav-button next" data-carousel-button="next" aria-label="Next project">
-                            <ion-icon name="arrow-forward-circle"></ion-icon>
-                        </button>
-                    </div>
-                    <div class="carousel" data-carousel>
-                        <ul class="projects-list" data-slides >
-                            <!-- Project List Items -->
-                        </ul>
-                    </div> <!-- END .carousel -->
-                </div> <!-- END .scroll -->
-            </section>
+        <section class="skills tabs-body-content">
+          <div class="scroll">
+            <h2>What I Bring to a Project</h2>
+            <ul class="skills-list">
+              <li>
+                <ion-icon name="logo-html5"></ion-icon>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <ion-icon name="logo-css3"></ion-icon>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <ion-icon name="logo-sass"></ion-icon>
+                <p>Sass</p>
+              </li>
+              <li>
+                <ion-icon name="logo-javascript"></ion-icon>
+                <p>ES6</p>
+              </li>
+              <li>
+                <ion-icon name="logo-react"></ion-icon>
+                <p>React</p>
+              </li>
+              <li>
+                <ion-icon name="logo-github"></ion-icon>
+                <p>Github</p>
+              </li>
+              <li>
+                <ion-icon name="git-branch-outline"></ion-icon>
+                <p>Git</p>
+              </li>
+              <li>
+                <ion-icon name="logo-firebase"></ion-icon>
+                <p>Firebase</p>
+              </li>
+              <li>
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+                <p><span class="block-span">Responsive</span> Design</p>
+              </li>
+              <li>
+                <ion-icon name="accessibility-outline"></ion-icon>
+                <p><span class="block-span">Web</span> Accessibility</p>
+              </li>
+            </ul>
+          </div>
+          <!-- END .scroll -->
+        </section>
 
-            <section class="contact tabs-body-content" id="contact">
-                <div class="scroll">
-                    <h2>Get in touch</h2>
-                    <p>Would you like to connect? Let's get in touch! Fill out the form below, or schedule a chat with me directly on my <a href="https://calendly.com/daniela-parra-lp/30min" target="_blank" rel="noopener noreferrer">Calendly!</a></p>
-                    <form action="https://formspree.io/f/meqddyok" method="POST" class="form" name="contact-form">
-                        <fieldset class="form-flex">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                            <button type="submit" class="btn">Submit</button>
-                        </fieldset>
-                    </form>
-                </div> <!-- END .scroll -->
-            </section>
-        </main>
-    </div> <!-- END .wrapper .tabs-->
+        <section class="projects tabs-body-content">
+          <div class="scroll">
+            <h2>What I've Worked On</h2>
+            <div class="carousel-nav">
+              <button
+                class="carousel-nav-button prev"
+                data-carousel-button="prev"
+                aria-label="Previous project"
+              >
+                <ion-icon name="arrow-back-circle"></ion-icon>
+              </button>
+              <button
+                class="carousel-nav-button next"
+                data-carousel-button="next"
+                aria-label="Next project"
+              >
+                <ion-icon name="arrow-forward-circle"></ion-icon>
+              </button>
+            </div>
+            <div class="carousel" data-carousel>
+              <ul class="projects-list" data-slides>
+                <!-- Project List Items -->
+              </ul>
+            </div>
+            <!-- END .carousel -->
+          </div>
+          <!-- END .scroll -->
+        </section>
+
+        <section class="contact tabs-body-content" id="contact">
+          <div class="scroll">
+            <h2>Get in touch</h2>
+            <p>
+              Would you like to connect? Let's get in touch! Fill out the form
+              below, or schedule a chat with me directly on my
+              <a
+                href="https://calendly.com/daniela-parra-lp/60min"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Calendly!</a
+              >
+            </p>
+            <form
+              action="https://formspree.io/f/meqddyok"
+              method="POST"
+              class="form"
+              name="contact-form"
+            >
+              <fieldset class="form-flex">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+          <!-- END .scroll -->
+        </section>
+      </main>
+    </div>
+    <!-- END .wrapper .tabs-->
     <!-- Ionicons script -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
     <!-- Link to app.js -->
     <script type="module" src="./scripts/app.js"></script>
-</body>
+  </body>
 </html>
